@@ -1,0 +1,196 @@
+archetype (adl_version=1.4; uid=050a23e2-a78a-4e7d-a8ed-7929d220c5a0)
+	openEHR-EHR-CLUSTER.episode_of_care_header.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-09-05">
+		["name"] = <"Jean-Pierre Messerli">
+		["organisation"] = <"JPM Consulting GmbH">
+		["email"] = <"jean-pierre.messerli@jpm-consulting.ch">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"dde15234e100c05552ee08b4cf24de63">
+		["build_uid"] = <"f7a098ff-9465-3396-9160-b1b5ff1fa7c8">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Episode of care header
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] matches {    -- Episode name
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] matches {    -- Clinical status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0003,    -- Active
+							at0004,    -- Inaktiv
+							at0005;    -- Completed
+							at0003]
+						}
+					}
+				}
+			}
+			ELEMENT[at0013] matches {    -- Progression status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0014,    -- Acut
+							at0015;    -- Chronic
+							at0014]
+						}
+					}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Process status
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0007,    -- Not applicable
+							at0008,    -- Referral
+							at0009,    -- Admission
+							at0010,    -- Pre-operative
+							at0011,    -- Post-operative
+							at0012;    -- Discharge
+							at0007]
+						}
+					}
+				}
+			}
+			ELEMENT[at0016] matches {    -- Classification
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0019,    -- Problem
+							at0020;    -- Diagnosis
+							at0019]
+						}
+					}
+				}
+			}
+			ELEMENT[at0018] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0017] occurrences matches {0..*} matches {    -- Extension
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Episode of care header">
+					description = <"episode of care header">
+				>
+				["at0001"] = <
+					text = <"Episode name">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Clinical status">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Active">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Inaktiv">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Completed">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Process status">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Not applicable">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Referral">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Admission">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Pre-operative">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Post-operative">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Discharge">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Progression status">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Acut">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Chronic">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Classification">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Problem">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Diagnosis">
+					description = <"">
+				>
+			>
+		>
+	>
