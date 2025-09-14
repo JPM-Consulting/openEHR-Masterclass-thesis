@@ -1,0 +1,421 @@
+archetype (adl_version=1.4; uid=54dd8d60-5758-42ca-bdde-22334215f727)
+	openEHR-EHR-CLUSTER.eoc_relationships_entry.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-09-12">
+		["name"] = <"Jean-Pierre Messerli">
+		["organisation"] = <"JPM Consulting GmbH">
+		["email"] = <"jean-pierre.messerli@jpm-consulting.ch">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4acaa3ad791a66797e2a92cd0bc2f46f">
+		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- EoC relationships entry
+		items cardinality matches {1..1; unordered} matches {
+			CLUSTER[at0001] matches {    -- Contact reference
+				items cardinality matches {1..1; unordered} matches {
+					ELEMENT[at0009] matches {    -- Link
+						value matches {
+							DV_EHR_URI matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0109] matches {    -- Episode references
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0147] occurrences matches {1..*} matches {    -- Link
+						value matches {
+							DV_EHR_URI matches {*}
+						}
+					}
+					ELEMENT[at0153] matches {    -- Role
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0154,    -- Primary
+									at0155]    -- Associated
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0003] occurrences matches {0..1} matches {    -- Assignments
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Clinical Section
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0016,    -- Chief Complaint
+									at0017,    -- History of Present Illness (HPI)
+									at0018,    -- Past Medical History (PMH)
+									at0019,    -- Past Illnesses History
+									at0020,    -- Past Surgical History
+									at0021,    -- Past Accidents and Injuries
+									at0022,    -- Obstetric History (Pregnancies & Births)
+									at0023,    -- Childhood Diseases
+									at0024,    -- Developmental History
+									at0025,    -- Medication history
+									at0026,    -- Allergies and Adverse Reactions
+									at0027,    -- Family history
+									at0028,    -- Social history
+									at0029,    -- Lifestyle factors
+									at0030,    -- Substance Use
+									at0031,    -- Occupational History
+									at0032,    -- Travel History
+									at0033,    -- Functional Status
+									at0034,    -- Review of Systems (ROS)
+									at0035,    -- Physical Examination
+									at0036,    -- General examination
+									at0037,    -- Vital signs
+									at0038,    -- System-specific Exams
+									at0039,    -- Diagnostic Studies
+									at0040,    -- Laboratory Studies
+									at0041,    -- Imaging Studies
+									at0042,    -- Pathology Findings
+									at0043,    -- Functional tests
+									at0044,    -- Diagnostic procedures
+									at0045,    -- Consult reports
+									at0046,    -- Differential Diagnoses
+									at0047,    -- Progress notes (SOAP)
+									at0048,    -- Risk factors
+									at0049,    -- Therapy & Management
+									at0050,    -- Medication Plan
+									at0051,    -- Non-pharmacologic therapies
+									at0052,    -- Device-based therapies
+									at0053,    -- Surgical & Interventional Procedures
+									at0054,    -- Rehabilitation / Dialysis / Radiation / Nutrition
+									at0055,    -- Immunisations
+									at0056,    -- Medical devices implanted
+									at0057,    -- Medical devices non-implantable
+									at0058,    -- Prevention & Screening
+									at0059,    -- Certificates & Legal Documents
+									at0060,    -- Fitness for Work
+									at0061]    -- Exemptions
+								}
+							}
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- SOAP
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0012,    -- Subjective
+									at0013,    -- Objective
+									at0014,    -- Assessment
+									at0015,    -- Plan
+									at0148]    -- Not applicable
+								}
+							}
+						}
+					}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {    -- Extension
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"EoC relationships entry">
+					description = <"CLUSTER within a clinical COMPOSITION on ENTRY level (OBSERVATION, EVALUATION, INSTRUCTION, ACTION) with associations for an episode-oriented medical record.">
+					comment = <"Placed unter ENTRY.protocol.">
+				>
+				["at0001"] = <
+					text = <"Contact reference">
+					description = <"Reference from clinical COMPOSITION on ENTRY level to the care-encounter COMPOSITION (Contact).">
+					comment = <"Meaning = documents
+Type = care encounter / contact">
+				>
+				["at0003"] = <
+					text = <"Assignments">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Extension">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Link">
+					description = <"Pointer from clinical COMPOSITION on ENTRY level to the care-encounter COMPOSITION (Contact).">
+					comment = <"Meaning = documents
+Type = care encounter / contact">
+				>
+				["at0010"] = <
+					text = <"Clinical Section">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"SOAP">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Subjective">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Objective">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Assessment">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Plan">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Chief Complaint">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"History of Present Illness (HPI)">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Past Medical History (PMH)">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Past Illnesses History">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Past Surgical History">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Past Accidents and Injuries">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Obstetric History (Pregnancies & Births)">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Childhood Diseases">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Developmental History">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Medication history">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Allergies and Adverse Reactions">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Family history">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Social history">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Lifestyle factors">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Substance Use">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Occupational History">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Travel History">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Functional Status">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Review of Systems (ROS)">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Physical Examination">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"General examination">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Vital signs">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"System-specific Exams">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Diagnostic Studies">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Laboratory Studies">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Imaging Studies">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Pathology Findings">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Functional tests">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Diagnostic procedures">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Consult reports">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Differential Diagnoses">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Progress notes (SOAP)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Risk factors">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Therapy & Management">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Medication Plan">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Non-pharmacologic therapies">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Device-based therapies">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Surgical & Interventional Procedures">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Rehabilitation / Dialysis / Radiation / Nutrition">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Immunisations">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Medical devices implanted">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Medical devices non-implantable">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Prevention & Screening">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Certificates & Legal Documents">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Fitness for Work">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Exemptions">
+					description = <"">
+				>
+				["at0109"] = <
+					text = <"Episode references">
+					description = <"References from clinical COMPOSITION on ENTRY level to the episode-of-care COMPOSITION.">
+					comment = <"Meaning = is related to
+Type = episode-of-care">
+				>
+				["at0147"] = <
+					text = <"Link">
+					description = <"Pointers from clinical COMPOSITION on ENTRY level to the episode-of-care COMPOSITION.">
+					comment = <"Meaning = is related to
+Type = episode-of-care">
+				>
+				["at0148"] = <
+					text = <"Not applicable">
+					description = <"">
+				>
+				["at0153"] = <
+					text = <"Role">
+					description = <"">
+				>
+				["at0154"] = <
+					text = <"Primary">
+					description = <"">
+				>
+				["at0155"] = <
+					text = <"Associated">
+					description = <"">
+				>
+			>
+		>
+	>
