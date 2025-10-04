@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e2f41233204fd98500f10c09f22c093c">
+		["MD5-CAM-1.0.1"] = <"eb4a4971d3b1e0eb1be471133b476680">
 		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- eoc_relationships_episode_of_care_old
+	CLUSTER[at0000] matches {    -- EOC Relationships episode of care old
 		items cardinality matches {1..1; unordered} matches {
 			CLUSTER[at0109] matches {    -- Clinical composition references
 				items cardinality matches {1..*; unordered} matches {
@@ -97,7 +97,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"eoc_relationships_episode_of_care_old">
+					text = <"EOC Relationships episode of care old">
 					description = <"CLUSTER within an episode of care COMPOSITION with associations for an episode-oriented medical record.">
 					comment = <"Placed unter COMPOSTION.context.other_context">
 				>
