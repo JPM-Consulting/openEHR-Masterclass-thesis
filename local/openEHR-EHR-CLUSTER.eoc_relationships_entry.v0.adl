@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4acaa3ad791a66797e2a92cd0bc2f46f">
+		["MD5-CAM-1.0.1"] = <"101de449e74babbf42b744050bd1d3ef">
 		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- EoC relationships entry
+	CLUSTER[at0000] matches {    -- EoC Relationships entry
 		items cardinality matches {1..1; unordered} matches {
 			CLUSTER[at0001] matches {    -- Contact reference
 				items cardinality matches {1..1; unordered} matches {
@@ -152,7 +152,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"EoC relationships entry">
+					text = <"EoC Relationships entry">
 					description = <"CLUSTER within a clinical COMPOSITION on ENTRY level (OBSERVATION, EVALUATION, INSTRUCTION, ACTION) with associations for an episode-oriented medical record.">
 					comment = <"Placed unter ENTRY.protocol.">
 				>
