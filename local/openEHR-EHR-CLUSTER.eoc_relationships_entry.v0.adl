@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"496f41d23c57b8493fe2a518e5231290">
+		["MD5-CAM-1.0.1"] = <"f1e7fddcc1df9432e1095402c04ed789">
 		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
 	>
 
@@ -42,7 +42,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0109] occurrences matches {1..*} matches {    -- Episode references
+			CLUSTER[at0109] occurrences matches {1..*} matches {    -- Episode reference
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0147] matches {    -- Link
 						value matches {
@@ -154,7 +154,7 @@ ontology
 				["at0000"] = <
 					text = <"EoC Relationships entry">
 					description = <"CLUSTER within a clinical COMPOSITION on ENTRY level (OBSERVATION, EVALUATION, INSTRUCTION, ACTION) with associations for an episode-oriented medical record.">
-					comment = <"Placed unter ENTRY.protocol.">
+					comment = <"Placed under ENTRY.protocol.">
 				>
 				["at0001"] = <
 					text = <"Contact reference">
@@ -389,7 +389,7 @@ Type = care encounter / contact">
 					description = <"">
 				>
 				["at0109"] = <
-					text = <"Episode references">
+					text = <"Episode reference">
 					description = <"References from clinical COMPOSITION on ENTRY level to the episode-of-care COMPOSITION.">
 					comment = <"Meaning = is related to
 Type = episode-of-care">
@@ -406,15 +406,15 @@ Type = episode-of-care">
 				>
 				["at0153"] = <
 					text = <"Role">
-					description = <"">
+					description = <"Role of the referenced Episode of Care in relation to the clinical ENTRY.">
 				>
 				["at0154"] = <
 					text = <"Primary">
-					description = <"">
+					description = <"The Episode of Care representing the primary Health Problem to which the clinical ENTRY is associated.">
 				>
 				["at0155"] = <
 					text = <"Associated">
-					description = <"">
+					description = <"An additional Episode of Care to which the clinical ENTRY is clinically relevant.">
 				>
 			>
 		>
