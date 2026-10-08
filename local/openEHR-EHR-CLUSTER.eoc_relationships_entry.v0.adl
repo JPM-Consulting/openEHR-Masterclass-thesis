@@ -18,12 +18,18 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			copyright = <"Jean-Pierre Messerli, JPM Consulting GmbH">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["MD5-CAM-1.0.1"] = <"f1e7fddcc1df9432e1095402c04ed789">
 		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
+		["original_namespace"] = <"ch.jpm-consulting">
+		["original_publisher"] = <"JPM Consulting GmbH">
+		["custodian_organisation"] = <"JPM Consulting GmbH">
+		["custodian_namespace"] = <"ch.jpm-consulting">
+		["current_contact"] = <"jean-pierre.messerli@jpm-consulting.ch">
 	>
 
 definition
