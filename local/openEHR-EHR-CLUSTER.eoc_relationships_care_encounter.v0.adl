@@ -28,7 +28,7 @@ description
 		["original_namespace"] = <"ch.jpm-consulting">
 		["original_publisher"] = <"JPM Consulting GmbH">
 		["custodian_namespace"] = <"ch.jpm-consulting">
-		["MD5-CAM-1.0.1"] = <"695dcbea0011201fcdd2c0bc52daef6e">
+		["MD5-CAM-1.0.1"] = <"69128e9a8f86158f0a7e34348fde72cf">
 		["build_uid"] = <"d5c3d087-2174-37c5-baa4-966371a25248">
 	>
 
@@ -72,7 +72,7 @@ ontology
 				["at0000"] = <
 					text = <"EoC Relationships care encounter">
 					description = <"CLUSTER within a care encounter COMPOSITION with associations for an episode-oriented medical record.">
-					comment = <"Placed under COMPOSTION.context.other_context.">
+					comment = <"Placed under COMPOSITION.context.other_context.">
 				>
 				["at0001"] = <
 					text = <"Admin encounter reference">
