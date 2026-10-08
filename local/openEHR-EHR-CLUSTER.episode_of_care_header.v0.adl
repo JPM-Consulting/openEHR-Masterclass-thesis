@@ -18,16 +18,18 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			copyright = <"2025 Jean-Pierre Messerli, JPM Consulting GmbH">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
-		["custodian_organisation"] = <"openEHR Foundation">
-		["original_namespace"] = <"org.openehr">
-		["original_publisher"] = <"openEHR Foundation">
-		["custodian_namespace"] = <"org.openehr">
+		["custodian_organisation"] = <"JPM Consulting GmbH">
+		["original_namespace"] = <"ch.jpm-consulting">
+		["original_publisher"] = <"JPM Consulting GmbH">
+		["custodian_namespace"] = <"ch.jpm-consulting">
 		["MD5-CAM-1.0.1"] = <"dde15234e100c05552ee08b4cf24de63">
 		["build_uid"] = <"f7a098ff-9465-3396-9160-b1b5ff1fa7c8">
+		["current_contact"] = <"jean-pierre.messerli@jpm-consulting.ch">
 	>
 
 definition
