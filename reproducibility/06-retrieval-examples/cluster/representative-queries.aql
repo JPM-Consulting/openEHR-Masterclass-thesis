@@ -1,0 +1,86 @@
+-- Representative CLUSTER retrieval queries — REV-075 harmonised draft
+-- SOURCE: reproducibility(4).zip (21 October 2026)
+-- EVIDENCE STATUS: Q1/Q2 use the structural paths and CONTAINS chain
+-- actually exercised in T5 AQL-05 / AQL-04, respectively; the exact
+-- Q1/Q2 statements below are ADAPTED EXAMPLES, not verbatim executed queries.
+-- Q3/Q4 are MODEL-DERIVED ONLY; not execution-validated.
+-- Reference: 08-technical-proof-of-concept/05-cluster-pattern/T5/
+--            T5-aql-query-catalog.md (executed AQL-04, -05, -06, -12).
+-- T5 EHR: 16fe2926-c82a-462c-93f2-d5e67a29656f
+-- Example URI values refer to the original T5 reference dataset.
+-- NOTE: T5 later persisted an extra negative-test COMPOSITION (RI-02).
+-- The original T5 executed queries remain unchanged in their source archive.
+-- AQL retrieval of URI strings does not demonstrate native dereferencing.
+
+-- Q1 — Care Encounter relationship selection
+-- STRUCTURE/PATHS CONFIRMED BY EXECUTED T5 AQL-05 (8 rows for CE2).
+-- Adapted example; not separately executed in this form.
+SELECT
+    c/uid/value AS composition_uid,
+    c/context/start_time/value AS start_time,
+    entry/name/value AS entry_name,
+    rel/items[at0001]/items[at0009]/value/value AS contact_uri
+FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f']
+    CONTAINS COMPOSITION c
+    CONTAINS ENTRY entry
+    CONTAINS CLUSTER rel[openEHR-EHR-CLUSTER.eoc_relationships_entry.v0]
+WHERE rel/items[at0001]/items[at0009]/value/value =
+    'ehr://bd0bb285-e61d-411b-8c4f-d06a05b53ba6::local.ehrbase.org::1'
+ORDER BY c/context/start_time/value ASC
+
+-- Q2 — Episode-of-Care relationship selection
+-- STRUCTURE/PATHS CONFIRMED BY EXECUTED T5 AQL-04 (12 rows for EP2).
+-- Adapted example; not separately executed in this form.
+SELECT
+    c/uid/value AS composition_uid,
+    c/context/start_time/value AS start_time,
+    entry/name/value AS entry_name,
+    rel/items[at0109]/items[at0147]/value/value AS episode_uri,
+    rel/items[at0109]/items[at0153]/value/value AS episode_role
+FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f']
+    CONTAINS COMPOSITION c
+    CONTAINS ENTRY entry
+    CONTAINS CLUSTER rel[openEHR-EHR-CLUSTER.eoc_relationships_entry.v0]
+WHERE rel/items[at0109]/items[at0147]/value/value =
+    'ehr://c2ad3baa-50c4-4b00-8177-4d86352b7e89::local.ehrbase.org::1'
+ORDER BY c/context/start_time/value ASC
+
+-- Q3 — Clinical Section classification (MODEL-DERIVED; NOT EXECUTED)
+-- The Assignments branch is optional. No T5 result demonstrates that
+-- Clinical Section values were instantiated in the persisted T5 dataset.
+-- Consequently this query may legitimately return zero rows.
+-- at0039 is the illustrative local code from the original example;
+-- its value-set membership has not been independently re-verified here.
+SELECT
+    c/uid/value AS composition_uid,
+    entry/name/value AS entry_name,
+    rel/items[at0003]/items[at0010]/value/value AS clinical_section,
+    rel/items[at0003]/items[at0010]/value/defining_code/code_string AS clinical_section_code
+FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f']
+    CONTAINS COMPOSITION c
+    CONTAINS ENTRY entry
+    CONTAINS CLUSTER rel[openEHR-EHR-CLUSTER.eoc_relationships_entry.v0]
+WHERE rel/items[at0003]/items[at0010]/value/defining_code/code_string = 'at0039'
+
+-- Q4 — Episode + Clinical Section + SOAP classification
+-- MODEL-DERIVED; NOT EXECUTED AS A COMBINED QUERY.
+-- Episode selection path was tested in T5 AQL-04; SOAP note retrieval
+-- was tested via SECTION traversal in T5 AQL-09 through AQL-12.
+-- The optional Assignments/Clinical Section/SOAP fields were NOT shown
+-- to be populated or retrievable in the T5 relationship CLUSTER.
+-- This projection is NOT equivalent to the tested SOAP SECTION queries.
+SELECT
+    c/uid/value AS composition_uid,
+    entry/name/value AS entry_name,
+    rel/items[at0109]/items[at0147]/value/value AS episode_uri,
+    rel/items[at0109]/items[at0153]/value/value AS episode_role,
+    rel/items[at0003]/items[at0010]/value/value AS clinical_section,
+    rel/items[at0003]/items[at0010]/value/defining_code/code_string AS clinical_section_code,
+    rel/items[at0003]/items[at0011]/value/value AS soap_category,
+    rel/items[at0003]/items[at0011]/value/defining_code/code_string AS soap_code
+FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f']
+    CONTAINS COMPOSITION c
+    CONTAINS ENTRY entry
+    CONTAINS CLUSTER rel[openEHR-EHR-CLUSTER.eoc_relationships_entry.v0]
+WHERE rel/items[at0109]/items[at0147]/value/value =
+    'ehr://c2ad3baa-50c4-4b00-8177-4d86352b7e89::local.ehrbase.org::1'
