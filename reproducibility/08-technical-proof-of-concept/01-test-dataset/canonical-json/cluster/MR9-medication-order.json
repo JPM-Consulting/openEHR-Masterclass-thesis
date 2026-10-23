@@ -1,0 +1,169 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "Medical Record Medication Order - CLUSTER relationships"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.encounter.v1"
+    },
+    "template_id": {
+      "value": "JPM_Medical_Record_Medication_Order_Cluster.v1"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "en"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "CH"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Synthetic clinician"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2024-11-17T09:00:00+01:00"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "primary medical care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "228"
+      }
+    }
+  },
+  "content": [
+    {
+      "_type": "INSTRUCTION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Medication order"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-INSTRUCTION.medication_order.v3"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "en"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "narrative": {
+        "_type": "DV_TEXT",
+        "value": "Amoxicillin 500 mg / Clavulanate 125 mg film-coated tablet PO 3x1"
+      },
+      "activities": [
+        {
+          "_type": "ACTIVITY",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Order"
+          },
+          "description": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Tree"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Medication item"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Amoxicillin 500 mg / Clavulanate 125 mg film-coated tablet"
+                },
+                "archetype_node_id": "at0070"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Route"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Oral"
+                },
+                "archetype_node_id": "at0091"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Overall directions description"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Amoxicillin 500 mg / Clavulanate 125 mg film-coated tablet PO 3x1"
+                },
+                "archetype_node_id": "at0009"
+              }
+            ],
+            "archetype_node_id": "at0002"
+          },
+          "timing": {
+            "_type": "DV_PARSABLE",
+            "value": "R/2024-11-17T09:00:00+01:00/PT8H",
+            "formalism": "ISO8601"
+          },
+          "action_archetype_id": "/.*/",
+          "archetype_node_id": "at0001"
+        }
+      ],
+      "archetype_node_id": "openEHR-EHR-INSTRUCTION.medication_order.v3"
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.encounter.v1"
+}
