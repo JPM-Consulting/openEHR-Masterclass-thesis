@@ -29,7 +29,8 @@ publications/
 │   └── Messerli_2026_EHRCON26_Abstract.pdf
 │
 └── frontiers/
-    └── Messerli_2026_Frontiers_Manuscript.docx
+    ├── README.md
+    └── [supporting figures]
 ```
 
 ## Masterclass thesis
@@ -60,9 +61,11 @@ It is retained as a distinct conference contribution, not as an earlier version 
 
 **Jean-Pierre Messerli. *Representing Episode-of-Care Relationships in openEHR: A Comparative Evaluation of Three Implementation Patterns.* 2026.**
 
-Location:
+Publication status and future article reference:
 
-`frontiers/Messerli_2026_Frontiers_Manuscript.docx`
+[`frontiers/README.md`](frontiers/README.md)
+
+The manuscript is not included in this public repository during preparation, submission, or peer review.
 
 The manuscript presents a structured, design-level comparison of three implementation patterns:
 
@@ -106,7 +109,7 @@ The historical publications remain unchanged. The current Frontiers manuscript a
 
 Publication files should retain stable filenames. Git commits, tags, and repository releases should record version history rather than working-version suffixes in filenames.
 
-During peer review, the Frontiers file may contain a submitted manuscript rather than the final published article. After publication, the repository documentation should be updated with the definitive bibliographic details and persistent identifier.
+The Frontiers manuscript is not distributed through this repository. After publication, the repository documentation should be updated with the definitive bibliographic details and persistent identifier. The `frontiers/README.md` serves as a stable entry point to the published article.
 
 ## Citation
 
