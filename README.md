@@ -206,11 +206,24 @@ Reuse should preserve the distinction between design artifacts, documented PoC o
 
 ## Citation
 
+The research repository is archived on Zenodo. For the exact research artifacts
+included in the initial release `v1.0.0`, cite the version-specific DOI:
+
+**Messerli, Jean-Pierre (2026). *openEHR Episode-Oriented Medical Record Research* (v1.0.0) [Dataset]. Zenodo.**
+
+[Version DOI: 10.5281/zenodo.23599077](https://doi.org/10.5281/zenodo.23599077)
+
+The [Concept DOI: 10.5281/zenodo.23599076](https://doi.org/10.5281/zenodo.23599076)
+identifies the repository's version series and resolves to its latest archived version.
+For reproducibility, prefer the version-specific DOI.
+
 Repository-level citation metadata are provided in:
 
 [`CITATION.cff`](CITATION.cff)
 
-Each publication should be cited according to its bibliographic status. After publication of the full article, the repository metadata can be updated with its definitive citation and persistent identifier.
+Each publication should be cited according to its bibliographic status. After
+publication of the full article, the repository documentation can be updated
+with its definitive citation and persistent identifier.
 
 ## License
 

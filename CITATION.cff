@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this repository or its reproducibility materials, please cite this repository and the associated publication when available. Individual publications and third-party openEHR artifacts may have separate citation and licensing requirements."
 title: "openEHR Episode-Oriented Medical Record Research"
 type: dataset
+doi: 10.5281/zenodo.23599077
 authors:
   - family-names: Messerli
     given-names: Jean-Pierre
