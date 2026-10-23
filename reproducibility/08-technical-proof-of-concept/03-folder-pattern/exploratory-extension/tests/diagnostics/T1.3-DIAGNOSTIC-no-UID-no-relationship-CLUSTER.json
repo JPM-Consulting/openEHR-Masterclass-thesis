@@ -1,0 +1,295 @@
+{
+  "_type": "FOLDER",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "Directory"
+  },
+  "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+  "folders": [
+    {
+      "_type": "FOLDER",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Contacts"
+      },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "CE1 – Initial Consultation"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/e8a936eb-fbec-4f92-9569-2b56a0bba81a"
+                }
+              }
+            ]
+          },
+          "items": [
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "cd251051-1458-4e8c-82c8-5e0460e6351b"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "fe87dbbc-b51c-4974-811a-faa039335a6d"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "8da6decf-7bc4-420d-9c6d-028fe939ba86"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "4bba618a-6a3c-4071-b50c-52920eda9d21"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "6a1f1a11-e67b-4912-b005-e796fd203947"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "CE2 – Follow-up Consultation"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/261c9c14-15f0-4751-b7cd-3dbc74585197"
+                }
+              }
+            ]
+          },
+          "items": [
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "11df7274-1c38-446b-94ca-5481f3a685f0"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "a2a5b845-3302-41c2-8b7f-005e384edb78"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "e0a98944-ccb7-4434-98df-607c91e843eb"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "eca7a7bc-d0df-4a4f-bf46-33f35e145ef6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "FOLDER",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Episodes"
+      },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP1 – General Health Problem"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/dcf0ae41-bb10-465c-80e3-660145063d26"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP2 – Urinary Tract Infection"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/ce3a94ce-7ab1-41ff-9c94-a27101fcd3fc"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP3 – Arterial Hypertension"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe9b684c-9f9e-4510-8cb4-bf135668f5d7"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP4 – Obesity WHO Grade I"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/f2800e4a-53c2-4a77-9e45-9e4389a3c21f"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

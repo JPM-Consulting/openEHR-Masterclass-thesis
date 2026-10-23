@@ -1,0 +1,30 @@
+{
+  "_type": "FOLDER",
+  "name": { "_type": "DV_TEXT", "value": "Directory" },
+  "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+  "folders": [
+    {
+      "_type": "FOLDER",
+      "name": { "_type": "DV_TEXT", "value": "Contacts" },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        {
+          "_type": "FOLDER",
+          "name": { "_type": "DV_TEXT", "value": "CE1 – Initial Consultation" },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1"
+        }
+      ]
+    },
+    {
+      "_type": "FOLDER",
+      "name": { "_type": "DV_TEXT", "value": "Episodes" },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        { "_type": "FOLDER", "name": { "_type": "DV_TEXT", "value": "EP1 – General Health Problem" }, "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1" },
+        { "_type": "FOLDER", "name": { "_type": "DV_TEXT", "value": "EP2 – Urinary Tract Infection" }, "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1" },
+        { "_type": "FOLDER", "name": { "_type": "DV_TEXT", "value": "EP3 – Arterial Hypertension" }, "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1" },
+        { "_type": "FOLDER", "name": { "_type": "DV_TEXT", "value": "EP4 – Obesity WHO Grade I" }, "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1" }
+      ]
+    }
+  ]
+}

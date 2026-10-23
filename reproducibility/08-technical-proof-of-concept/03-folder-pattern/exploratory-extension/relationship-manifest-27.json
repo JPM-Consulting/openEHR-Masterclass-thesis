@@ -1,0 +1,272 @@
+{
+  "ehr_id": "25bf624b-c4ee-43e7-b695-a8d69c37f7f1",
+  "status": "READY FOR T1.3 POST TRIAL; EHRbase validation and URI dereferencing not yet tested",
+  "care_encounter_relationships": [
+    {
+      "cr": "CR-001",
+      "mr": "MR1",
+      "ce": "CE1",
+      "composition_uuid": "cd251051-1458-4e8c-82c8-5e0460e6351b"
+    },
+    {
+      "cr": "CR-002",
+      "mr": "MR2",
+      "ce": "CE1",
+      "composition_uuid": "fe87dbbc-b51c-4974-811a-faa039335a6d"
+    },
+    {
+      "cr": "CR-003",
+      "mr": "MR3",
+      "ce": "CE1",
+      "composition_uuid": "8da6decf-7bc4-420d-9c6d-028fe939ba86"
+    },
+    {
+      "cr": "CR-004",
+      "mr": "MR4",
+      "ce": "CE1",
+      "composition_uuid": "4bba618a-6a3c-4071-b50c-52920eda9d21"
+    },
+    {
+      "cr": "CR-005",
+      "mr": "MR5",
+      "ce": "CE1",
+      "composition_uuid": "6a1f1a11-e67b-4912-b005-e796fd203947"
+    },
+    {
+      "cr": "CR-006",
+      "mr": "MR6",
+      "ce": "CE2",
+      "composition_uuid": "11df7274-1c38-446b-94ca-5481f3a685f0"
+    },
+    {
+      "cr": "CR-007",
+      "mr": "MR7",
+      "ce": "CE2",
+      "composition_uuid": "a2a5b845-3302-41c2-8b7f-005e384edb78"
+    },
+    {
+      "cr": "CR-008",
+      "mr": "MR8",
+      "ce": "CE2",
+      "composition_uuid": "e0a98944-ccb7-4434-98df-607c91e843eb"
+    },
+    {
+      "cr": "CR-009",
+      "mr": "MR9",
+      "ce": "CE2",
+      "composition_uuid": "eca7a7bc-d0df-4a4f-bf46-33f35e145ef6"
+    }
+  ],
+  "episode_relationships": [
+    {
+      "cr": "CR-010",
+      "mr": "MR1",
+      "entry": "BP",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/cd251051-1458-4e8c-82c8-5e0460e6351b/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Pattern tested in T0; T1 dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-011",
+      "mr": "MR1",
+      "entry": "BP",
+      "episode": "EP3",
+      "role": "Associated",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/cd251051-1458-4e8c-82c8-5e0460e6351b/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Pattern tested in T0; T1 dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-012",
+      "mr": "MR1",
+      "entry": "Pulse",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/cd251051-1458-4e8c-82c8-5e0460e6351b/content%5BopenEHR-EHR-OBSERVATION.pulse.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Pattern tested in T0; T1 dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-013",
+      "mr": "MR2",
+      "entry": "Height",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.height.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-014",
+      "mr": "MR2",
+      "entry": "Height",
+      "episode": "EP4",
+      "role": "Associated",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.height.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-015",
+      "mr": "MR2",
+      "entry": "Weight",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.body_weight.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-016",
+      "mr": "MR2",
+      "entry": "Weight",
+      "episode": "EP4",
+      "role": "Associated",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.body_weight.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-017",
+      "mr": "MR2",
+      "entry": "BMI",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.body_mass_index.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-018",
+      "mr": "MR2",
+      "entry": "BMI",
+      "episode": "EP4",
+      "role": "Associated",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/fe87dbbc-b51c-4974-811a-faa039335a6d/content%5BopenEHR-EHR-OBSERVATION.body_mass_index.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-019",
+      "mr": "MR3",
+      "entry": "Urinalysis",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/8da6decf-7bc4-420d-9c6d-028fe939ba86/content%5BopenEHR-EHR-OBSERVATION.urinalysis.v1%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-020",
+      "mr": "MR4",
+      "entry": "SOAP",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/4bba618a-6a3c-4071-b50c-52920eda9d21/content%5BopenEHR-EHR-SECTION.soap.v0%5D",
+      "reference_granularity": "SECTION",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "Clinical content reference"
+    },
+    {
+      "cr": "CR-021",
+      "mr": "MR5",
+      "entry": "Medication Order",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/6a1f1a11-e67b-4912-b005-e796fd203947/content%5BopenEHR-EHR-INSTRUCTION.medication_order.v3%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-022",
+      "mr": "MR6",
+      "entry": "Microbiology",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/11df7274-1c38-446b-94ca-5481f3a685f0/content%5BopenEHR-EHR-OBSERVATION.laboratory_test_result.v1%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-023",
+      "mr": "MR7",
+      "entry": "BP",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/a2a5b845-3302-41c2-8b7f-005e384edb78/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-024",
+      "mr": "MR7",
+      "entry": "BP",
+      "episode": "EP3",
+      "role": "Associated",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/a2a5b845-3302-41c2-8b7f-005e384edb78/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-025",
+      "mr": "MR7",
+      "entry": "Pulse",
+      "episode": "EP1",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/a2a5b845-3302-41c2-8b7f-005e384edb78/content%5BopenEHR-EHR-OBSERVATION.pulse.v2%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    },
+    {
+      "cr": "CR-026",
+      "mr": "MR8",
+      "entry": "SOAP",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/e0a98944-ccb7-4434-98df-607c91e843eb/content%5BopenEHR-EHR-SECTION.soap.v0%5D",
+      "reference_granularity": "SECTION",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "Clinical content reference"
+    },
+    {
+      "cr": "CR-027",
+      "mr": "MR9",
+      "entry": "Medication Order",
+      "episode": "EP2",
+      "role": "Primary",
+      "uri": "ehr://25bf624b-c4ee-43e7-b695-a8d69c37f7f1/versioned_composition/eca7a7bc-d0df-4a4f-bf46-33f35e145ef6/content%5BopenEHR-EHR-INSTRUCTION.medication_order.v3%5D",
+      "reference_granularity": "ENTRY",
+      "verification": "Path inferred from supplied persisted COMPOSITION JSON; URI dereferencing not tested",
+      "reference_label": "ENTRY reference"
+    }
+  ],
+  "count": {
+    "care_encounter": 9,
+    "episode_assignments": 18,
+    "total": 27
+  },
+  "warning": "SOAP MR4/MR8 refer to SECTION.soap.v0, not ENTRY; technical URI resolution must be validated. T0 confirms FOLDER storage and readback, not URI dereferencing or integrity. CLUSTER element label changed to Clinical content reference for SOAP only.",
+  "counts_by_episode": {
+    "EP1": 7,
+    "EP2": 6,
+    "EP3": 2,
+    "EP4": 3
+  }
+}

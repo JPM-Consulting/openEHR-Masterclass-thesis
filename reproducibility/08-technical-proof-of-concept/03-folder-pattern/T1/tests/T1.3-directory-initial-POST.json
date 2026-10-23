@@ -1,0 +1,507 @@
+{
+  "_type": "FOLDER",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "Directory"
+  },
+  "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+  "folders": [
+    {
+      "_type": "FOLDER",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Contacts"
+      },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "CE1 – Initial Consultation"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/7d94b831-a3f9-4dcc-9357-76017c798de1"
+                }
+              }
+            ]
+          },
+          "items": [
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "a5b1e471-f28f-4365-b0b0-51c1fb03b112"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "93e1160d-c364-4cb5-b15b-5a12ab6a5024"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "6a93d5f8-78b5-4df0-b699-5b3580d6112b"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "d524a132-ea78-41a8-b112-10a2ed795ea4"
+              }
+            },
+            {
+              "_type": "OBJECT_REF",
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION",
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "a731f2a6-cd0c-4386-a419-ff872889d9d1"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "CE2 – Follow-up Consultation"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/7fe11fce-0f8f-496f-b947-7c545a59bfb4"
+                }
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "3ffb2e64-1a13-4adf-94c3-e050ceaa609b"
+              },
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION"
+            },
+            {
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "983478c2-1060-4fc8-b534-7eb7ed6cee6a"
+              },
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION"
+            },
+            {
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "efc0672a-51b9-4722-99b1-bb4d92b0a8cd"
+              },
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION"
+            },
+            {
+              "id": {
+                "_type": "HIER_OBJECT_ID",
+                "value": "4df8bcde-5b89-4df4-b47b-1eb7080dad9d"
+              },
+              "namespace": "local",
+              "type": "VERSIONED_COMPOSITION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_type": "FOLDER",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Episodes"
+      },
+      "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+      "folders": [
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP1 – General Health Problem"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/e6746cc1-372c-4a95-b078-51b66f50b1b1"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/a5b1e471-f28f-4365-b0b0-51c1fb03b112/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/a5b1e471-f28f-4365-b0b0-51c1fb03b112/content%5BopenEHR-EHR-OBSERVATION.pulse.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.height.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.body_weight.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.body_mass_index.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/983478c2-1060-4fc8-b534-7eb7ed6cee6a/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/983478c2-1060-4fc8-b534-7eb7ed6cee6a/content%5BopenEHR-EHR-OBSERVATION.pulse.v2%5D"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP2 – Urinary Tract Infection"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/5d96fcf0-5988-4649-a70b-0b05b4f89133"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/6a93d5f8-78b5-4df0-b699-5b3580d6112b/content%5BopenEHR-EHR-OBSERVATION.urinalysis.v1%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/d524a132-ea78-41a8-b112-10a2ed795ea4/content%5BopenEHR-EHR-SECTION.soap.v0%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/a731f2a6-cd0c-4386-a419-ff872889d9d1/content%5BopenEHR-EHR-INSTRUCTION.medication_order.v3%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/3ffb2e64-1a13-4adf-94c3-e050ceaa609b/content%5BopenEHR-EHR-OBSERVATION.laboratory_test_result.v1%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/efc0672a-51b9-4722-99b1-bb4d92b0a8cd/content%5BopenEHR-EHR-SECTION.soap.v0%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/4df8bcde-5b89-4df4-b47b-1eb7080dad9d/content%5BopenEHR-EHR-INSTRUCTION.medication_order.v3%5D"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP3 – Arterial Hypertension"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/99ebe958-d9a9-4fd0-ac49-ca0b2db241f0"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/983478c2-1060-4fc8-b534-7eb7ed6cee6a/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/a5b1e471-f28f-4365-b0b0-51c1fb03b112/content%5BopenEHR-EHR-OBSERVATION.blood_pressure.v2%5D"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "_type": "FOLDER",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "EP4 – Obesity WHO Grade I"
+          },
+          "archetype_node_id": "openEHR-EHR-FOLDER.generic.v1",
+          "details": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Folder metadata"
+            },
+            "archetype_node_id": "at0001",
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Related COMPOSITION"
+                },
+                "archetype_node_id": "at0001",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/e0df43fe-f506-47ad-90ec-3e5a480cb5f5"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.height.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.body_weight.v2%5D"
+                }
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Clinical content reference"
+                },
+                "archetype_node_id": "at0003",
+                "value": {
+                  "_type": "DV_EHR_URI",
+                  "value": "ehr://8dcd91be-ccb2-4ace-8a18-88d9bd5bce5b/versioned_composition/93e1160d-c364-4cb5-b15b-5a12ab6a5024/content%5BopenEHR-EHR-OBSERVATION.body_mass_index.v2%5D"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
