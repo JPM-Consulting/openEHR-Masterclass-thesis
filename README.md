@@ -60,9 +60,11 @@ Repository location:
 
 The manuscript extends the original work through a structured, design-level comparison of the FOLDER-, LINK-, and CLUSTER-based implementation patterns.
 
-Repository location:
+Publication status and future article reference:
 
-`publications/frontiers/Messerli_2026_Frontiers_Manuscript.docx`
+[`publications/frontiers/README.md`](publications/frontiers/README.md)
+
+The manuscript is not included in this public repository during preparation, submission, or peer review.
 
 The manuscript-specific evidence package is maintained separately under `reproducibility/`.
 
@@ -86,7 +88,8 @@ openEHR-Masterclass-thesis/
 │   ├── ehrcon26/
 │   │   └── Messerli_2026_EHRCON26_Abstract.pdf
 │   └── frontiers/
-│       └── Messerli_2026_Frontiers_Manuscript.docx
+│       ├── README.md
+│       └── [supporting figures]
 │
 ├── local/
 │   ├── README.md
