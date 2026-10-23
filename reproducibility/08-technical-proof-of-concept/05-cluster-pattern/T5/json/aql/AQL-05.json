@@ -1,0 +1,3 @@
+{
+  "q": "SELECT c/uid/value AS composition_uid, c/context/start_time/value AS start_time, entry/name/value AS entry_name, rel/items[at0001]/items[at0009]/value/value AS contact_uri FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f'] CONTAINS COMPOSITION c CONTAINS ENTRY entry CONTAINS CLUSTER rel[openEHR-EHR-CLUSTER.eoc_relationships_entry.v0] WHERE rel/items[at0001]/items[at0009]/value/value = 'ehr://bd0bb285-e61d-411b-8c4f-d06a05b53ba6::local.ehrbase.org::1' ORDER BY c/context/start_time/value ASC"
+}

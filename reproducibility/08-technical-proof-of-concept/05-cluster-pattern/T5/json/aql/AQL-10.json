@@ -1,0 +1,3 @@
+{
+  "q": "SELECT c/uid/value AS composition_uid, s/name/value AS section_name, entry/name/value AS entry_name, entry/data AS clinical_data FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f'] CONTAINS COMPOSITION c CONTAINS SECTION s CONTAINS ENTRY entry WHERE c/uid/value = '6b11b73e-7536-4399-9406-644a54a0d2cb::local.ehrbase.org::1'"
+}

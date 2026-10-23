@@ -1,0 +1,3 @@
+{
+  "q": "SELECT c/uid/value AS composition_uid FROM EHR e[ehr_id/value='16fe2926-c82a-462c-93f2-d5e67a29656f'] CONTAINS COMPOSITION c WHERE c/uid/value = '00000000-0000-4000-8000-000000000099::local.ehrbase.org::1'"
+}

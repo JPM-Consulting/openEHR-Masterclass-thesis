@@ -1,0 +1,259 @@
+{
+  "_type": "COMPOSITION",
+  "name": {
+    "_type": "DV_TEXT",
+    "value": "Medical Record Medication Order - CLUSTER relationships"
+  },
+  "archetype_details": {
+    "archetype_id": {
+      "value": "openEHR-EHR-COMPOSITION.encounter.v1"
+    },
+    "template_id": {
+      "value": "JPM_Medical_Record_Medication_Order_Cluster.v1"
+    },
+    "rm_version": "1.0.4"
+  },
+  "language": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_639-1"
+    },
+    "code_string": "en"
+  },
+  "territory": {
+    "_type": "CODE_PHRASE",
+    "terminology_id": {
+      "_type": "TERMINOLOGY_ID",
+      "value": "ISO_3166-1"
+    },
+    "code_string": "CH"
+  },
+  "category": {
+    "_type": "DV_CODED_TEXT",
+    "value": "event",
+    "defining_code": {
+      "_type": "CODE_PHRASE",
+      "terminology_id": {
+        "_type": "TERMINOLOGY_ID",
+        "value": "openehr"
+      },
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "_type": "PARTY_IDENTIFIED",
+    "name": "Synthetic clinician"
+  },
+  "context": {
+    "_type": "EVENT_CONTEXT",
+    "start_time": {
+      "_type": "DV_DATE_TIME",
+      "value": "2024-11-15T09:00:00+01:00"
+    },
+    "setting": {
+      "_type": "DV_CODED_TEXT",
+      "value": "primary medical care",
+      "defining_code": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "openehr"
+        },
+        "code_string": "228"
+      }
+    }
+  },
+  "content": [
+    {
+      "_type": "INSTRUCTION",
+      "name": {
+        "_type": "DV_TEXT",
+        "value": "Medication order"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-INSTRUCTION.medication_order.v3"
+        },
+        "rm_version": "1.0.4"
+      },
+      "language": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "ISO_639-1"
+        },
+        "code_string": "en"
+      },
+      "encoding": {
+        "_type": "CODE_PHRASE",
+        "terminology_id": {
+          "_type": "TERMINOLOGY_ID",
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "_type": "PARTY_SELF"
+      },
+      "narrative": {
+        "_type": "DV_TEXT",
+        "value": "Trimethoprim–sulfamethoxazole (TMP 160 mg / SMX 800 mg) PO 2x1"
+      },
+      "activities": [
+        {
+          "_type": "ACTIVITY",
+          "name": {
+            "_type": "DV_TEXT",
+            "value": "Order"
+          },
+          "description": {
+            "_type": "ITEM_TREE",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "Tree"
+            },
+            "items": [
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Medication item"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Trimethoprim–sulfamethoxazole (TMP 160 mg / SMX 800 mg)"
+                },
+                "archetype_node_id": "at0070"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Route"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Oral"
+                },
+                "archetype_node_id": "at0091"
+              },
+              {
+                "_type": "ELEMENT",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Overall directions description"
+                },
+                "value": {
+                  "_type": "DV_TEXT",
+                  "value": "Trimethoprim–sulfamethoxazole (TMP 160 mg / SMX 800 mg) PO 2x1"
+                },
+                "archetype_node_id": "at0009"
+              }
+            ],
+            "archetype_node_id": "at0002"
+          },
+          "timing": {
+            "_type": "DV_PARSABLE",
+            "value": "R/2024-11-15T09:00:00+01:00/PT12H",
+            "formalism": "ISO8601"
+          },
+          "action_archetype_id": "/.*/",
+          "archetype_node_id": "at0001"
+        }
+      ],
+      "archetype_node_id": "openEHR-EHR-INSTRUCTION.medication_order.v3",
+      "protocol": {
+        "_type": "ITEM_TREE",
+        "name": {
+          "_type": "DV_TEXT",
+          "value": "Tree"
+        },
+        "items": [
+          {
+            "_type": "CLUSTER",
+            "name": {
+              "_type": "DV_TEXT",
+              "value": "EoC Relationships entry"
+            },
+            "items": [
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Contact reference"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Link"
+                    },
+                    "value": {
+                      "_type": "DV_EHR_URI",
+                      "value": "ehr://6617f878-b798-4422-979f-524d44dc1385::local.ehrbase.org::1"
+                    },
+                    "archetype_node_id": "at0009"
+                  }
+                ],
+                "archetype_node_id": "at0001"
+              },
+              {
+                "_type": "CLUSTER",
+                "name": {
+                  "_type": "DV_TEXT",
+                  "value": "Episode reference"
+                },
+                "items": [
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Link"
+                    },
+                    "value": {
+                      "_type": "DV_EHR_URI",
+                      "value": "ehr://c2ad3baa-50c4-4b00-8177-4d86352b7e89::local.ehrbase.org::1"
+                    },
+                    "archetype_node_id": "at0147"
+                  },
+                  {
+                    "_type": "ELEMENT",
+                    "name": {
+                      "_type": "DV_TEXT",
+                      "value": "Role"
+                    },
+                    "value": {
+                      "_type": "DV_CODED_TEXT",
+                      "value": "Primary",
+                      "defining_code": {
+                        "_type": "CODE_PHRASE",
+                        "terminology_id": {
+                          "_type": "TERMINOLOGY_ID",
+                          "value": "local"
+                        },
+                        "code_string": "at0154"
+                      }
+                    },
+                    "archetype_node_id": "at0153"
+                  }
+                ],
+                "archetype_node_id": "at0109"
+              }
+            ],
+            "archetype_node_id": "openEHR-EHR-CLUSTER.eoc_relationships_entry.v0",
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-CLUSTER.eoc_relationships_entry.v0"
+              },
+              "rm_version": "1.0.4"
+            }
+          }
+        ],
+        "archetype_node_id": "at0005"
+      }
+    }
+  ],
+  "archetype_node_id": "openEHR-EHR-COMPOSITION.encounter.v1"
+}

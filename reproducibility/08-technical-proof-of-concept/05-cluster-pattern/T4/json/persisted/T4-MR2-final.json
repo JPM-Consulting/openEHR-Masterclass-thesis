@@ -1,0 +1,301 @@
+{
+  "_type" : "COMPOSITION",
+  "name" : {
+    "_type" : "DV_TEXT",
+    "value" : "Medical Record Body Measurements - CLUSTER relationships"
+  },
+  "archetype_details" : {
+    "archetype_id" : {
+      "value" : "openEHR-EHR-COMPOSITION.encounter.v1"
+    },
+    "template_id" : {
+      "value" : "JPM_Medical_Record_Body_Measurements_Cluster.v1"
+    },
+    "rm_version" : "1.0.4"
+  },
+  "language" : {
+    "_type" : "CODE_PHRASE",
+    "terminology_id" : {
+      "_type" : "TERMINOLOGY_ID",
+      "value" : "ISO_639-1"
+    },
+    "code_string" : "en"
+  },
+  "territory" : {
+    "_type" : "CODE_PHRASE",
+    "terminology_id" : {
+      "_type" : "TERMINOLOGY_ID",
+      "value" : "ISO_3166-1"
+    },
+    "code_string" : "CH"
+  },
+  "category" : {
+    "_type" : "DV_CODED_TEXT",
+    "value" : "event",
+    "defining_code" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "openehr"
+      },
+      "code_string" : "433"
+    }
+  },
+  "composer" : {
+    "_type" : "PARTY_IDENTIFIED",
+    "name" : "Synthetic clinician"
+  },
+  "context" : {
+    "_type" : "EVENT_CONTEXT",
+    "start_time" : {
+      "_type" : "DV_DATE_TIME",
+      "value" : "2024-11-15T09:00:00+01:00"
+    },
+    "setting" : {
+      "_type" : "DV_CODED_TEXT",
+      "value" : "primary medical care",
+      "defining_code" : {
+        "_type" : "CODE_PHRASE",
+        "terminology_id" : {
+          "_type" : "TERMINOLOGY_ID",
+          "value" : "openehr"
+        },
+        "code_string" : "228"
+      }
+    }
+  },
+  "content" : [ {
+    "_type" : "OBSERVATION",
+    "name" : {
+      "_type" : "DV_TEXT",
+      "value" : "Height"
+    },
+    "archetype_details" : {
+      "archetype_id" : {
+        "value" : "openEHR-EHR-OBSERVATION.height.v2"
+      },
+      "rm_version" : "1.0.4"
+    },
+    "language" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "ISO_639-1"
+      },
+      "code_string" : "en"
+    },
+    "encoding" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "IANA_character-sets"
+      },
+      "code_string" : "UTF-8"
+    },
+    "subject" : {
+      "_type" : "PARTY_SELF"
+    },
+    "data" : {
+      "name" : {
+        "_type" : "DV_TEXT",
+        "value" : "history"
+      },
+      "origin" : {
+        "_type" : "DV_DATE_TIME",
+        "value" : "2024-11-15T09:00:00+01:00"
+      },
+      "events" : [ {
+        "_type" : "POINT_EVENT",
+        "name" : {
+          "_type" : "DV_TEXT",
+          "value" : "Point in time"
+        },
+        "time" : {
+          "_type" : "DV_DATE_TIME",
+          "value" : "2024-11-15T09:00:00+01:00"
+        },
+        "data" : {
+          "_type" : "ITEM_TREE",
+          "name" : {
+            "_type" : "DV_TEXT",
+            "value" : "Simple"
+          },
+          "items" : [ {
+            "_type" : "ELEMENT",
+            "name" : {
+              "_type" : "DV_TEXT",
+              "value" : "Height"
+            },
+            "value" : {
+              "_type" : "DV_QUANTITY",
+              "units" : "cm",
+              "magnitude" : 168.0
+            },
+            "archetype_node_id" : "at0004"
+          } ],
+          "archetype_node_id" : "at0003"
+        },
+        "archetype_node_id" : "at0002"
+      } ],
+      "archetype_node_id" : "at0001"
+    },
+    "archetype_node_id" : "openEHR-EHR-OBSERVATION.height.v2"
+  }, {
+    "_type" : "OBSERVATION",
+    "name" : {
+      "_type" : "DV_TEXT",
+      "value" : "Body weight"
+    },
+    "archetype_details" : {
+      "archetype_id" : {
+        "value" : "openEHR-EHR-OBSERVATION.body_weight.v2"
+      },
+      "rm_version" : "1.0.4"
+    },
+    "language" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "ISO_639-1"
+      },
+      "code_string" : "en"
+    },
+    "encoding" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "IANA_character-sets"
+      },
+      "code_string" : "UTF-8"
+    },
+    "subject" : {
+      "_type" : "PARTY_SELF"
+    },
+    "data" : {
+      "name" : {
+        "_type" : "DV_TEXT",
+        "value" : "history"
+      },
+      "origin" : {
+        "_type" : "DV_DATE_TIME",
+        "value" : "2024-11-15T09:00:00+01:00"
+      },
+      "events" : [ {
+        "_type" : "POINT_EVENT",
+        "name" : {
+          "_type" : "DV_TEXT",
+          "value" : "Point in time"
+        },
+        "time" : {
+          "_type" : "DV_DATE_TIME",
+          "value" : "2024-11-15T09:00:00+01:00"
+        },
+        "data" : {
+          "_type" : "ITEM_TREE",
+          "name" : {
+            "_type" : "DV_TEXT",
+            "value" : "Simple"
+          },
+          "items" : [ {
+            "_type" : "ELEMENT",
+            "name" : {
+              "_type" : "DV_TEXT",
+              "value" : "Weight"
+            },
+            "value" : {
+              "_type" : "DV_QUANTITY",
+              "units" : "kg",
+              "magnitude" : 86.0
+            },
+            "archetype_node_id" : "at0004"
+          } ],
+          "archetype_node_id" : "at0001"
+        },
+        "archetype_node_id" : "at0003"
+      } ],
+      "archetype_node_id" : "at0002"
+    },
+    "archetype_node_id" : "openEHR-EHR-OBSERVATION.body_weight.v2"
+  }, {
+    "_type" : "OBSERVATION",
+    "name" : {
+      "_type" : "DV_TEXT",
+      "value" : "Body Mass Index (BMI)"
+    },
+    "archetype_details" : {
+      "archetype_id" : {
+        "value" : "openEHR-EHR-OBSERVATION.body_mass_index.v2"
+      },
+      "rm_version" : "1.0.4"
+    },
+    "language" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "ISO_639-1"
+      },
+      "code_string" : "en"
+    },
+    "encoding" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "IANA_character-sets"
+      },
+      "code_string" : "UTF-8"
+    },
+    "subject" : {
+      "_type" : "PARTY_SELF"
+    },
+    "data" : {
+      "name" : {
+        "_type" : "DV_TEXT",
+        "value" : "history"
+      },
+      "origin" : {
+        "_type" : "DV_DATE_TIME",
+        "value" : "2024-11-15T09:00:00+01:00"
+      },
+      "events" : [ {
+        "_type" : "POINT_EVENT",
+        "name" : {
+          "_type" : "DV_TEXT",
+          "value" : "Point in time"
+        },
+        "time" : {
+          "_type" : "DV_DATE_TIME",
+          "value" : "2024-11-15T09:00:00+01:00"
+        },
+        "data" : {
+          "_type" : "ITEM_TREE",
+          "name" : {
+            "_type" : "DV_TEXT",
+            "value" : "Single"
+          },
+          "items" : [ {
+            "_type" : "ELEMENT",
+            "name" : {
+              "_type" : "DV_TEXT",
+              "value" : "Body mass index"
+            },
+            "value" : {
+              "_type" : "DV_QUANTITY",
+              "units" : "kg/m2",
+              "magnitude" : 30.5
+            },
+            "archetype_node_id" : "at0004"
+          } ],
+          "archetype_node_id" : "at0003"
+        },
+        "archetype_node_id" : "at0002"
+      } ],
+      "archetype_node_id" : "at0001"
+    },
+    "archetype_node_id" : "openEHR-EHR-OBSERVATION.body_mass_index.v2"
+  } ],
+  "archetype_node_id" : "openEHR-EHR-COMPOSITION.encounter.v1",
+  "uid" : {
+    "_type" : "OBJECT_VERSION_ID",
+    "value" : "6cd82ad3-c4e1-454c-a0f8-b3f75bb3d30c::local.ehrbase.org::1"
+  }
+}

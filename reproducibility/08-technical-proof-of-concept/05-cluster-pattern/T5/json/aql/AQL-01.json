@@ -1,0 +1,3 @@
+{
+  "q": "SELECT c/uid/value AS composition_uid, c/name/value AS composition_name, c/archetype_details/template_id/value AS template_id, c/context/start_time/value AS start_time FROM EHR e CONTAINS COMPOSITION c WHERE e/ehr_id/value = '16fe2926-c82a-462c-93f2-d5e67a29656f' ORDER BY c/context/start_time/value ASC"
+}
