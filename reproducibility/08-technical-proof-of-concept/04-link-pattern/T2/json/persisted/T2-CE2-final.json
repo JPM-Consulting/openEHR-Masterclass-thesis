@@ -1,0 +1,189 @@
+{
+  "_type" : "COMPOSITION",
+  "name" : {
+    "_type" : "DV_TEXT",
+    "value" : "Care Encounter"
+  },
+  "archetype_details" : {
+    "archetype_id" : {
+      "value" : "openEHR-EHR-COMPOSITION.encounter.v1"
+    },
+    "template_id" : {
+      "value" : "JPM_Care_Encounter.v1"
+    },
+    "rm_version" : "1.0.4"
+  },
+  "language" : {
+    "_type" : "CODE_PHRASE",
+    "terminology_id" : {
+      "_type" : "TERMINOLOGY_ID",
+      "value" : "ISO_639-1"
+    },
+    "code_string" : "en"
+  },
+  "territory" : {
+    "_type" : "CODE_PHRASE",
+    "terminology_id" : {
+      "_type" : "TERMINOLOGY_ID",
+      "value" : "ISO_3166-1"
+    },
+    "code_string" : "CH"
+  },
+  "category" : {
+    "_type" : "DV_CODED_TEXT",
+    "value" : "event",
+    "defining_code" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "openehr"
+      },
+      "code_string" : "433"
+    }
+  },
+  "composer" : {
+    "_type" : "PARTY_IDENTIFIED",
+    "name" : "Synthetic clinician"
+  },
+  "context" : {
+    "_type" : "EVENT_CONTEXT",
+    "start_time" : {
+      "_type" : "DV_DATE_TIME",
+      "value" : "2024-11-17T09:00:00+01:00"
+    },
+    "setting" : {
+      "_type" : "DV_CODED_TEXT",
+      "value" : "primary medical care",
+      "defining_code" : {
+        "_type" : "CODE_PHRASE",
+        "terminology_id" : {
+          "_type" : "TERMINOLOGY_ID",
+          "value" : "openehr"
+        },
+        "code_string" : "228"
+      }
+    }
+  },
+  "content" : [ {
+    "_type" : "EVALUATION",
+    "name" : {
+      "_type" : "DV_TEXT",
+      "value" : "Reason for encounter"
+    },
+    "archetype_details" : {
+      "archetype_id" : {
+        "value" : "openEHR-EHR-EVALUATION.reason_for_encounter.v1"
+      },
+      "rm_version" : "1.0.4"
+    },
+    "language" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "ISO_639-1"
+      },
+      "code_string" : "en"
+    },
+    "encoding" : {
+      "_type" : "CODE_PHRASE",
+      "terminology_id" : {
+        "_type" : "TERMINOLOGY_ID",
+        "value" : "IANA_character-sets"
+      },
+      "code_string" : "UTF-8"
+    },
+    "subject" : {
+      "_type" : "PARTY_SELF"
+    },
+    "data" : {
+      "_type" : "ITEM_TREE",
+      "name" : {
+        "_type" : "DV_TEXT",
+        "value" : "Tree"
+      },
+      "items" : [ {
+        "_type" : "ELEMENT",
+        "name" : {
+          "_type" : "DV_TEXT",
+          "value" : "Contact type"
+        },
+        "value" : {
+          "_type" : "DV_TEXT",
+          "value" : "Follow-up outpatient consultation"
+        },
+        "archetype_node_id" : "at0002"
+      }, {
+        "_type" : "ELEMENT",
+        "name" : {
+          "_type" : "DV_TEXT",
+          "value" : "Presenting problem"
+        },
+        "value" : {
+          "_type" : "DV_TEXT",
+          "value" : "Persistent dysuria"
+        },
+        "archetype_node_id" : "at0004"
+      } ],
+      "archetype_node_id" : "at0001"
+    },
+    "archetype_node_id" : "openEHR-EHR-EVALUATION.reason_for_encounter.v1"
+  } ],
+  "archetype_node_id" : "openEHR-EHR-COMPOSITION.encounter.v1",
+  "uid" : {
+    "_type" : "OBJECT_VERSION_ID",
+    "value" : "4805a3a9-7518-4bd8-9f5f-e57bcfcb30c2::local.ehrbase.org::1"
+  },
+  "links" : [ {
+    "meaning" : {
+      "_type" : "DV_TEXT",
+      "value" : "documented by"
+    },
+    "type" : {
+      "_type" : "DV_TEXT",
+      "value" : "encounter"
+    },
+    "target" : {
+      "_type" : "DV_EHR_URI",
+      "value" : "ehr://dc1bb0c2-342f-4f6a-b426-65b63dffa9a0/bd64397e-9a0b-4fc1-af59-720c3d7f0eaa::local.ehrbase.org::1"
+    }
+  }, {
+    "meaning" : {
+      "_type" : "DV_TEXT",
+      "value" : "documented by"
+    },
+    "type" : {
+      "_type" : "DV_TEXT",
+      "value" : "encounter"
+    },
+    "target" : {
+      "_type" : "DV_EHR_URI",
+      "value" : "ehr://dc1bb0c2-342f-4f6a-b426-65b63dffa9a0/22b21098-90d0-4c56-9ba1-0244436a6ee0::local.ehrbase.org::1"
+    }
+  }, {
+    "meaning" : {
+      "_type" : "DV_TEXT",
+      "value" : "documented by"
+    },
+    "type" : {
+      "_type" : "DV_TEXT",
+      "value" : "encounter"
+    },
+    "target" : {
+      "_type" : "DV_EHR_URI",
+      "value" : "ehr://dc1bb0c2-342f-4f6a-b426-65b63dffa9a0/1a226cc5-7f59-45f9-9833-42d976d3c63c::local.ehrbase.org::1"
+    }
+  }, {
+    "meaning" : {
+      "_type" : "DV_TEXT",
+      "value" : "documented by"
+    },
+    "type" : {
+      "_type" : "DV_TEXT",
+      "value" : "encounter"
+    },
+    "target" : {
+      "_type" : "DV_EHR_URI",
+      "value" : "ehr://dc1bb0c2-342f-4f6a-b426-65b63dffa9a0/71c9f21b-9165-4fb4-9fa2-343486fcf37a::local.ehrbase.org::1"
+    }
+  } ]
+}
