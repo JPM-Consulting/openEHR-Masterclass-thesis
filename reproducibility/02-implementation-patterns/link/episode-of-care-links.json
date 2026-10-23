@@ -1,0 +1,84 @@
+{
+  "artifact_type": "representative_link_examples",
+  "relationship": "Clinical ENTRY and Episode of Care",
+  "rm_note": "The objects in 'examples' document alternative directional configurations. Each 'link' value is an openEHR RM LINK structure. The surrounding wrapper is documentation metadata and is not an openEHR RM object.",
+  "examples": [
+    {
+      "id": "A1",
+      "source": {
+        "rm_type": "ENTRY",
+        "role": "Clinical ENTRY",
+        "source_composition_uid": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+        "source_path": "/content[openEHR-EHR-OBSERVATION.progress_note.v1]"
+      },
+      "link": {
+        "_type": "LINK",
+        "meaning": {
+          "_type": "DV_TEXT",
+          "value": "is related to the same care plan, act or episode"
+        },
+        "type": {
+          "_type": "DV_TEXT",
+          "value": "episode-of-care-primary"
+        },
+        "target": {
+          "_type": "DV_EHR_URI",
+          "value": "ehr://00000000-0000-4000-8000-000000000001/composition/33333333-3333-4333-8333-333333333333"
+        }
+      },
+      "target_role": "Primary Episode-of-Care COMPOSITION",
+      "manuscript_direction": "Clinical ENTRY to Episode-of-Care COMPOSITION"
+    },
+    {
+      "id": "A2",
+      "source": {
+        "rm_type": "ENTRY",
+        "role": "Same clinical ENTRY as A1",
+        "source_composition_uid": "aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+        "source_path": "/content[openEHR-EHR-OBSERVATION.progress_note.v1]"
+      },
+      "link": {
+        "_type": "LINK",
+        "meaning": {
+          "_type": "DV_TEXT",
+          "value": "is related to the same care plan, act or episode"
+        },
+        "type": {
+          "_type": "DV_TEXT",
+          "value": "episode-of-care-associated"
+        },
+        "target": {
+          "_type": "DV_EHR_URI",
+          "value": "ehr://00000000-0000-4000-8000-000000000001/composition/44444444-4444-4444-8444-444444444444"
+        }
+      },
+      "target_role": "Associated Episode-of-Care COMPOSITION",
+      "manuscript_direction": "Clinical ENTRY to additional associated Episode-of-Care COMPOSITION"
+    },
+    {
+      "id": "B",
+      "source": {
+        "rm_type": "COMPOSITION",
+        "role": "Episode-of-Care COMPOSITION",
+        "uid": "33333333-3333-4333-8333-333333333333"
+      },
+      "link": {
+        "_type": "LINK",
+        "meaning": {
+          "_type": "DV_TEXT",
+          "value": "is related to the same care plan, act or episode"
+        },
+        "type": {
+          "_type": "DV_TEXT",
+          "value": "episode-related-clinical-entry"
+        },
+        "target": {
+          "_type": "DV_EHR_URI",
+          "value": "ehr://00000000-0000-4000-8000-000000000001/composition/aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa/content[openEHR-EHR-OBSERVATION.progress_note.v1]"
+        }
+      },
+      "target_role": "Clinical ENTRY",
+      "manuscript_direction": "Episode-of-Care COMPOSITION to clinical ENTRY"
+    }
+  ]
+}
