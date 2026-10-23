@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template xmlns="http://schemas.openehr.org/v1">
+    <language>
+        <terminology_id>
+            <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>en</code_string>
+    </language>
+    <description>
+        <original_author id="name">Jean-Pierre Messerli</original_author>
+        <original_author id="organisation">JPM Consulting GmbH</original_author>
+        <original_author id="email">jean-pierre.messerli@jpm-consulting.ch</original_author>
+        <original_author id="date">2026-10-09</original_author>
+        <lifecycle_state>unmanaged</lifecycle_state>
+        <other_details id="licence"></other_details>
+        <other_details id="custodian_organisation"></other_details>
+        <other_details id="original_namespace"></other_details>
+        <other_details id="original_publisher"></other_details>
+        <other_details id="custodian_namespace"></other_details>
+        <other_details id="sem_ver">3.1.0</other_details>
+        <other_details id="build_uid"></other_details>
+        <other_details id="MD5-CAM-1.0.1">f9031dcae22e9bce46e7d8c9267318cb</other_details>
+        <other_details id="PARENT:MD5-CAM-1.0.1">3B0765A6B395C9D01595FDF2D440E6CB</other_details>
+        <details>
+            <language>
+                <terminology_id>
+                    <value>ISO_639-1</value>
+                </terminology_id>
+                <code_string>en</code_string>
+            </language>
+            <purpose>Not Specified</purpose>
+        </details>
+    </description>
+    <uid>
+        <value>f7c30d24-6afd-43bf-a9fd-8c7597f59d37</value>
+    </uid>
+    <template_id>
+        <value>JPM_Care_Encounter.v1</value>
+    </template_id>
+    <concept>JPM_Care_Encounter.v1</concept>
+    <definition>
+        <rm_type_name>COMPOSITION</rm_type_name>
+        <occurrences>
+            <lower_included>true</lower_included>
+            <upper_included>true</upper_included>
+            <lower_unbounded>false</lower_unbounded>
+            <upper_unbounded>false</upper_unbounded>
+            <lower>1</lower>
+            <upper>1</upper>
+        </occurrences>
+        <node_id>at0000</node_id>
+        <attributes xsi:type="C_SINGLE_ATTRIBUTE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <rm_attribute_name>category</rm_attribute_name>
+            <existence>
+                <lower_included>true</lower_included>
+                <upper_included>true</upper_included>
+                <lower_unbounded>false</lower_unbounded>
+                <upper_unbounded>false</upper_unbounded>
+                <lower>1</lower>
+                <upper>1</upper>
+            </existence>
+            <match_negated>false</match_negated>
+            <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>DV_CODED_TEXT</rm_type_name>
+                <occurrences>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>1</lower>
+                    <upper>1</upper>
+                </occurrences>
+                <node_id></node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                    <rm_attribute_name>defining_code</rm_attribute_name>
+                    <existence>
+                        <lower_included>true</lower_included>
+                        <upper_included>true</upper_included>
+                        <lower_unbounded>false</lower_unbounded>
+                        <upper_unbounded>false</upper_unbounded>
+                        <lower>1</lower>
+                        <upper>1</upper>
+                    </existence>
+                    <match_negated>false</match_negated>
+                    <children xsi:type="C_CODE_PHRASE">
+                        <rm_type_name>CODE_PHRASE</rm_type_name>
+                        <occurrences>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                        </occurrences>
+                        <node_id></node_id>
+                        <terminology_id>
+                            <value>openehr</value>
+                        </terminology_id>
+                        <code_list>433</code_list>
+                    </children>
+                </attributes>
+            </children>
+        </attributes>
+        <attributes xsi:type="C_SINGLE_ATTRIBUTE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <rm_attribute_name>context</rm_attribute_name>
+            <existence>
+                <lower_included>true</lower_included>
+                <upper_included>true</upper_included>
+                <lower_unbounded>false</lower_unbounded>
+                <upper_unbounded>false</upper_unbounded>
+                <lower>0</lower>
+                <upper>1</upper>
+            </existence>
+            <match_negated>false</match_negated>
+            <children xsi:type="C_COMPLEX_OBJECT">
+                <rm_type_name>EVENT_CONTEXT</rm_type_name>
+                <occurrences>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>1</lower>
+                    <upper>1</upper>
+                </occurrences>
+                <node_id></node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                    <rm_attribute_name>other_context</rm_attribute_name>
+                    <existence>
+                        <lower_included>true</lower_included>
+                        <upper_included>true</upper_included>
+                        <lower_unbounded>false</lower_unbounded>
+                        <upper_unbounded>false</upper_unbounded>
+                        <lower>0</lower>
+                        <upper>1</upper>
+                    </existence>
+                    <match_negated>false</match_negated>
+                    <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ITEM_TREE</rm_type_name>
+                        <occurrences>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0001</node_id>
+                        <attributes xsi:type="C_MULTIPLE_ATTRIBUTE">
+                            <rm_attribute_name>items</rm_attribute_name>
+                            <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                            </existence>
+                            <match_negated>false</match_negated>
+                            <children xsi:type="ARCHETYPE_SLOT">
+                                <rm_type_name>CLUSTER</rm_type_name>
+                                <occurrences>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>false</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>true</upper_unbounded>
+                                    <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0002</node_id>
+                                <includes>
+                                    <string_expression>archetype_id/value matches {/.*/}</string_expression>
+                                    <expression xsi:type="EXPR_BINARY_OPERATOR">
+                                        <type>Boolean</type>
+                                        <operator>2007</operator>
+                                        <precedence_overridden>false</precedence_overridden>
+                                        <left_operand xsi:type="EXPR_LEAF">
+                                            <type>String</type>
+                                            <item xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema">archetype_id/value</item>
+                                            <reference_type>attribute</reference_type>
+                                        </left_operand>
+                                        <right_operand xsi:type="EXPR_LEAF">
+                                            <type>String</type>
+                                            <item xsi:type="C_STRING">
+                                                <pattern>.*</pattern>
+                                            </item>
+                                            <reference_type>constraint</reference_type>
+                                        </right_operand>
+                                    </expression>
+                                </includes>
+                            </children>
+                            <cardinality>
+                                <is_ordered>false</is_ordered>
+                                <is_unique>false</is_unique>
+                                <interval>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>false</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>true</upper_unbounded>
+                                    <lower>0</lower>
+                                </interval>
+                            </cardinality>
+                        </attributes>
+                    </children>
+                </attributes>
+            </children>
+        </attributes>
+        <attributes xsi:type="C_MULTIPLE_ATTRIBUTE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <rm_attribute_name>content</rm_attribute_name>
+            <existence>
+                <lower_included>true</lower_included>
+                <upper_included>true</upper_included>
+                <lower_unbounded>false</lower_unbounded>
+                <upper_unbounded>false</upper_unbounded>
+                <lower>0</lower>
+                <upper>1</upper>
+            </existence>
+            <match_negated>false</match_negated>
+            <children xsi:type="C_ARCHETYPE_ROOT">
+                <rm_type_name>EVALUATION</rm_type_name>
+                <occurrences>
+                    <lower_included>true</lower_included>
+                    <upper_included>true</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>false</upper_unbounded>
+                    <lower>0</lower>
+                    <upper>1</upper>
+                </occurrences>
+                <node_id>at0000</node_id>
+                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                    <rm_attribute_name>data</rm_attribute_name>
+                    <existence>
+                        <lower_included>true</lower_included>
+                        <upper_included>true</upper_included>
+                        <lower_unbounded>false</lower_unbounded>
+                        <upper_unbounded>false</upper_unbounded>
+                        <lower>1</lower>
+                        <upper>1</upper>
+                    </existence>
+                    <match_negated>false</match_negated>
+                    <children xsi:type="C_COMPLEX_OBJECT">
+                        <rm_type_name>ITEM_TREE</rm_type_name>
+                        <occurrences>
+                            <lower_included>true</lower_included>
+                            <upper_included>true</upper_included>
+                            <lower_unbounded>false</lower_unbounded>
+                            <upper_unbounded>false</upper_unbounded>
+                            <lower>1</lower>
+                            <upper>1</upper>
+                        </occurrences>
+                        <node_id>at0001</node_id>
+                        <attributes xsi:type="C_MULTIPLE_ATTRIBUTE">
+                            <rm_attribute_name>items</rm_attribute_name>
+                            <existence>
+                                <lower_included>true</lower_included>
+                                <upper_included>true</upper_included>
+                                <lower_unbounded>false</lower_unbounded>
+                                <upper_unbounded>false</upper_unbounded>
+                                <lower>0</lower>
+                                <upper>1</upper>
+                            </existence>
+                            <match_negated>false</match_negated>
+                            <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>ELEMENT</rm_type_name>
+                                <occurrences>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>true</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>false</upper_unbounded>
+                                    <lower>0</lower>
+                                    <upper>1</upper>
+                                </occurrences>
+                                <node_id>at0002</node_id>
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                    <rm_attribute_name>value</rm_attribute_name>
+                                    <existence>
+                                        <lower_included>true</lower_included>
+                                        <upper_included>true</upper_included>
+                                        <lower_unbounded>false</lower_unbounded>
+                                        <upper_unbounded>false</upper_unbounded>
+                                        <lower>0</lower>
+                                        <upper>1</upper>
+                                    </existence>
+                                    <match_negated>false</match_negated>
+                                    <children xsi:type="C_COMPLEX_OBJECT">
+                                        <rm_type_name>DV_TEXT</rm_type_name>
+                                        <occurrences>
+                                            <lower_included>true</lower_included>
+                                            <upper_included>true</upper_included>
+                                            <lower_unbounded>false</lower_unbounded>
+                                            <upper_unbounded>false</upper_unbounded>
+                                            <lower>1</lower>
+                                            <upper>1</upper>
+                                        </occurrences>
+                                        <node_id></node_id>
+                                    </children>
+                                </attributes>
+                            </children>
+                            <children xsi:type="C_COMPLEX_OBJECT">
+                                <rm_type_name>ELEMENT</rm_type_name>
+                                <occurrences>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>false</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>true</upper_unbounded>
+                                    <lower>0</lower>
+                                </occurrences>
+                                <node_id>at0004</node_id>
+                                <attributes xsi:type="C_SINGLE_ATTRIBUTE">
+                                    <rm_attribute_name>value</rm_attribute_name>
+                                    <existence>
+                                        <lower_included>true</lower_included>
+                                        <upper_included>true</upper_included>
+                                        <lower_unbounded>false</lower_unbounded>
+                                        <upper_unbounded>false</upper_unbounded>
+                                        <lower>0</lower>
+                                        <upper>1</upper>
+                                    </existence>
+                                    <match_negated>false</match_negated>
+                                    <children xsi:type="C_COMPLEX_OBJECT">
+                                        <rm_type_name>DV_TEXT</rm_type_name>
+                                        <occurrences>
+                                            <lower_included>true</lower_included>
+                                            <upper_included>true</upper_included>
+                                            <lower_unbounded>false</lower_unbounded>
+                                            <upper_unbounded>false</upper_unbounded>
+                                            <lower>1</lower>
+                                            <upper>1</upper>
+                                        </occurrences>
+                                        <node_id></node_id>
+                                    </children>
+                                </attributes>
+                            </children>
+                            <cardinality>
+                                <is_ordered>false</is_ordered>
+                                <is_unique>false</is_unique>
+                                <interval>
+                                    <lower_included>true</lower_included>
+                                    <upper_included>false</upper_included>
+                                    <lower_unbounded>false</lower_unbounded>
+                                    <upper_unbounded>true</upper_unbounded>
+                                    <lower>0</lower>
+                                </interval>
+                            </cardinality>
+                        </attributes>
+                    </children>
+                </attributes>
+                <archetype_id>
+                    <value>openEHR-EHR-EVALUATION.reason_for_encounter.v1</value>
+                </archetype_id>
+                <term_definitions code="at0000">
+                    <items id="text">Reason for encounter</items>
+                    <items id="description">The reason for initiation of any healthcare encounter or contact by the individual who is the subject of care.</items>
+                </term_definitions>
+                <term_definitions code="at0001">
+                    <items id="text">Tree</items>
+                    <items id="description">@ internal @</items>
+                </term_definitions>
+                <term_definitions code="at0002">
+                    <items id="text">Contact type</items>
+                    <items id="description">Identification of the type, or administrative category, of healthcare sought or required by the subject of care.</items>
+                    <items id="comment">Coding of the 'Contact type' with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.&#13;
+</items>
+                </term_definitions>
+                <term_definitions code="at0004">
+                    <items id="text">Presenting problem</items>
+                    <items id="description">Identification of the clinical or social problem motivating the subject of care to seeking healthcare.</items>
+                    <items id="comment">Coding of the 'Presenting problem' with a terminology is desirable, where possible. Clinical or social reasons for seeking healthcare can include health issues, symptoms or physical signs. Examples: health issues - desire to quit smoking, domestic violence; symptoms - abdominal pain, shortness of breath; physical signs - an altered conscious state. 'Chief complaint' may be used as a valid synonym for 'Presenting problem' in templates.&#13;
+ </items>
+                </term_definitions>
+            </children>
+            <cardinality>
+                <is_ordered>false</is_ordered>
+                <is_unique>false</is_unique>
+                <interval>
+                    <lower_included>true</lower_included>
+                    <upper_included>false</upper_included>
+                    <lower_unbounded>false</lower_unbounded>
+                    <upper_unbounded>true</upper_unbounded>
+                    <lower>1</lower>
+                </interval>
+            </cardinality>
+        </attributes>
+        <archetype_id>
+            <value>openEHR-EHR-COMPOSITION.encounter.v1</value>
+        </archetype_id>
+        <template_id>
+            <value>JPM_Care_Encounter.v1</value>
+        </template_id>
+        <term_definitions code="at0000">
+            <items id="text">Care Encounter</items>
+            <items id="description">Interaction, contact or care event between a subject of care and healthcare provider(s).</items>
+        </term_definitions>
+        <term_definitions code="at0001">
+            <items id="text">Tree</items>
+            <items id="description">@ internal @</items>
+        </term_definitions>
+        <term_definitions code="at0002">
+            <items id="text">Extension</items>
+            <items id="description">Additional information required to extend the model with local content or to align with other reference models or formalisms.</items>
+            <items id="comment">For example: local information requirements; or additional metadata to align with FHIR.</items>
+        </term_definitions>
+    </definition>
+</template>
