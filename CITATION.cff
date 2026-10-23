@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository or its reproducibility materials, please cite this repository and the associated publication when available. Individual publications and third-party openEHR artifacts may have separate citation and licensing requirements."
+title: "openEHR Episode-Oriented Medical Record Research"
+type: dataset
+authors:
+  - family-names: Messerli
+    given-names: Jean-Pierre
+repository-code: "https://github.com/JPM-Consulting/openEHR-Masterclass-thesis"
+abstract: >-
+  Research repository containing openEHR modelling artifacts, publications,
+  a synthetic longitudinal patient record, and manuscript-specific
+  reproducibility materials for the comparative evaluation of FOLDER-, LINK-,
+  and CLUSTER-based approaches to representing Episode-of-Care relationships.
+keywords:
+  - openEHR
+  - Episode of Care
+  - electronic health record
+  - clinical information model
+  - FOLDER
+  - LINK
+  - CLUSTER
