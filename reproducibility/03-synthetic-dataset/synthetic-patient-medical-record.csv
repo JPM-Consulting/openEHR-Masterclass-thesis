@@ -1,0 +1,176 @@
+﻿Date;Contact;Detail entry;Section;"Health problem
+Episode of Care";ID;Condition;"Clinical
+Status";Recording Timestamp;Event Timestamp;Availability Timestamp
+15.11.2024;Consultation;"Reason for Encounter: Initial consultation for dysuria
+Chief Complaint: Burning sensation with urination.";Present illness;;;;;14.11.24 16:30;15.11.24 11:00;
+15.11.2024;Consultation;;Problem/Diagnosis;Dysuria;10;Problem;Active;15.11.24 10:00;15.11.24 10:00;15.11.24 10:00
+15.11.2024;Consultation;Blood pressure 140/90;Vital signs;General health problem;0;Problem;Active;15.11.24 10:15;15.11.24 10:10;15.11.24 11:00
+15.11.2024;Consultation;Heart rate 75;Vital signs;General health problem;0;Problem;Active;15.11.24 10:15;15.11.24 10:10;15.11.24 11:00
+15.11.2024;Consultation;Weight  = 86 kg;Vital signs;General health problem;0;Problem;Active;15.11.24 10:15;15.11.24 10:10;15.11.24 11:00
+15.11.2024;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;15.11.24 10:15;15.11.24 10:10;15.11.24 11:00
+15.11.2024;Consultation;BMI = 30.5;Vital signs;General health problem;0;Problem;Active;15.11.24 10:15;15.11.24 10:10;15.11.24 11:00
+15.11.2024;Consultation;Urinalysis – dipstick: Leukocyte esterase: 3+, Nitrite: positive, Blood: 1+, Protein: trace, pH: 6.0;Laboratory results;Dysuria;10;Problem;Active;15.11.24 10:30;15.11.24 10:30;15.11.24 11:00
+15.11.2024;Consultation;"S: Burning sensation during urination for 3 days. First episode. Denies visible blood in urine
+O:pyuria 
+A: Suspected cystitis
+P: antibiogram, Started treatment with trimethoprim– sulfamethoxazole. Therapy adjusted per antibiogram";Progress notes;Dysuria;10;Problem;Active;15.11.24 11:10;15.11.24 11:10;15.11.24 11:10
+15.11.2024;Consultation;;Problem/Diagnosis;Urinary tract infection;10;Diagnosis;Active;15.11.24 11:11;15.11.24 11:11;15.11.24 11:10
+15.11.2024;Consultation;Trimethoprim–sulfamethoxazole (TMP 160 mg / SMX 800 mg) PO 2x1;Medication;Urinary tract infection;10;Diagnosis;Active;15.11.24 11:12;15.11.24 11:12;15.11.24 11:12
+15.11.2024;Consultation;"S: Bilateral, pressure-like headaches for ~2 years, usually relieved by one paracetamol 500 mg. Over the past few weeks pain intensity has increased and tablets give only partial relief.
+O: Neurologic exam: alert, cranial nerves II–XII intact, motor 5/5, normal gait, no sensory deficits, Romberg negative. Fundoscopy: optic discs sharp, no papillo-œdema. Head & neck: no scalp or temporal-artery tenderness
+A: Chronic tension-type headache with recent exacerbation
+P: Start headache diary";Problem/Diagnosis;Headache;200;Problem;Active;15.11.24 11:15;15.11.24 11:15;15.11.24 11:15
+;;;;;;;;;;
+17.11.2024;Consultation;Reason for encounter: follow-up visit and chart completion;;;;;;;;
+17.11.2024;Consultation;Urine-Culture Antibiogram: Escherichia coli — ≥ 10⁵ CFU mL⁻¹, resistant to trimethoprim–sulfamethoxazole and ciprofloxacin but remains susceptible to amoxicillin-clavulanate, nitrofurantoin and fosfomycin;Laboratory results;Urinary tract infection;10;Diagnosis;Active;17.11.24 08:00;15.11.24 11:30;17.11.24 08:30
+17.11.2024;Consultation;Blood pressure 142/85;Vital signs;General health problem;0;Problem;Active;17.11.24 08:15;17.11.24 08:10;17.11.24 08:30
+17.11.2024;Consultation;Heart rate 72;Vital signs;General health problem;0;Problem;Active;17.11.24 08:15;17.11.24 08:10;17.11.24 08:30
+17.11.2024;Consultation;Weight  = 85.5 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;17.11.24 08:15;17.11.24 08:10;17.11.24 08:30
+17.11.2024;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;17.11.24 08:15;17.11.24 08:10;17.11.24 08:30
+17.11.2024;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;17.11.24 08:15;17.11.24 08:10;17.11.24 08:30
+17.11.2024;Consultation;"S: Still experiencing urinary symptoms
+O: Urine culture: Escherichia coli resistant to current antibiotic
+A: Acute bacterial cystitis
+P: Switch antimicrobial therapy";Progress notes;Urinary tract infection;10;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Acute bacterial cystitis;10;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Amoxicillin 500 mg / Clavulanate 125 mg film-coated tablet 3x1;Medication;Acute bacterial cystitis;10;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;"S: Headaches unchanged in frequency and intensity
+O: No new objective findings
+A: Chronic tension-type headache — status unchanged
+P: Proceed with brain MRI (CT if MRI contraindicated); await imaging results";Progress notes;Tension-type headache;200;Problem;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Coronary heart disease;20;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Diabetes mellitus type 2;30;Diagnosis;Active;17.11.24 08:30;01.01.07 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Past history;Appendectomy (1965);40;Diagnosis;Resolved;17.11.24 08:30;01.01.65 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Husband in need of care;50;Problem;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Arterial hypertension (Dx 2009);60;Diagnosis;Active;17.11.24 08:30;01.01.09 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Heart failure;70;Diagnosis;Active;17.11.24 08:30;01.01.10 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Past history;History of myocardial infarction (2015);80;Diagnosis;Resolved;17.11.24 08:30;01.01.15 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Nephropathy (ED 2017);90;Diagnosis;Active;17.11.24 08:30;01.01.17 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Obesity WHO grade I;100;Diagnosis;Active;17.11.24 08:30;01.01.98 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Polyneuropathy (Dx 2024);110;Diagnosis;Active;17.11.24 08:30;01.01.24 00:00;17.11.24 08:30
+17.11.2024;Consultation;;Problem/Diagnosis;Hammertoe, left foot;130;Diagnosis;Inactive;17.11.24 08:30;01.01.24 00:00;17.11.24 08:30
+17.11.2024;Consultation;Allergic rhinitis;Allergies;General health problem;;;;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;"Mother: Heart failure, diagnosed at age 67; deceased 2009";Family History;Coronary heart disease;20;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;"Father: Diabetes mellitus, diagnosed at age 56; deceased 2005";Family History;Diabetes mellitus type 2;30;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Acetylsalicylic acid (Aspirin Cardio), 100 mg film-coated tablet (1-0-0-0);Medication;Coronary heart disease;20;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Torsemide (Torasemid Spirig HC), 5 mg tablet (1-0-0-0);Medication;Heart failure;70;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Valsartan (Valsartan Sandoz), 160 mg film-coated tablet (1-0-0-0);Medication;Arterial hypertension (Dx 2009);60;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Rosuvastatin (Crestor), 20 mg film-coated tablet (1-0-0-0);Medication;Coronary heart disease;20;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Metformin (Metformin Mepha), 1 000 mg film-coated tablet (1-1-1-0);Medication;Diabetes mellitus type 2;30;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Zolpidem (Zoldorm), 10 mg film-coated tablet, 1 tab at night as needed;Medication;General health problem;;;;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Tobacco use:  Smoking, 12 cigarettes / day since 60 years (≈ 36 pack-years);Risk factors;Coronary heart disease;20;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Physical activity: No regular physical exercise;Risk factors;General health problem;0;Problem;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Weight / BMI: Obesity, WHO class I;Risk factors;Obesity WHO grade I;100;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Arterial hypertension: Secondary hypertension;Risk factors;Arterial hypertension (Dx 2009);60;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+17.11.2024;Consultation;Diabetes mellitus: Type 2 diabetes mellitus;Risk factors;Diabetes mellitus type 2;30;Diagnosis;Active;17.11.24 08:30;17.11.24 08:30;17.11.24 08:30
+;;;;;;;;;;
+23.11.2024;Consultation;Reason for encounter: follow-up visit;;;;;;;;
+23.11.2024;Consultation;Blood pressure 135/92;Vital signs;General health problem;0;Problem;Active;23.11.24 14:10;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;Heart rate 68;Vital signs;General health problem;0;Problem;Active;23.11.24 14:10;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;Weight  = 85.8 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;23.11.24 14:10;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;23.11.24 14:10;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;23.11.24 14:10;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;Urinalysis – dipstick: Leukocyte esterase: negative, Nitrite: negative, Blood: negative, Protein: negative, pH: 6.0;Laboratory results;Acute bacterial cystitis;10;Diagnosis;Active;23.11.24 14:15;23.11.24 14:00;23.11.24 14:30
+23.11.2024;Consultation;"S: Patient reports resolution of urinary symptom
+O: Urine culture: Consistent with sterilised urine.
+A: Acute bacterial cystitis – resolved
+P: Discontinue antimicrobial therapy (completed full course). Routine follow-up at next scheduled chronic-care visit; no additional testing required unless symptomatic.";Progress notes;History of acute bacterial cystitis;10;Diagnosis;Resolved;23.11.24 14:30;23.11.24 14:30;23.11.24 14:30
+;;;;;;;;;;
+25.11.2024;Telephone;Reason for encounter: Questions;;;;;;;;
+25.11.2024;Telephone;"S: Patient reports slight urge to urinate and wants to know if he needs to do anything.
+O: -
+A: Irritable bladder (irritative voiding)
+P: The patient should drink enough fluids and should report back if the problems persist or worsen";Progress notes;History of acute bacterial cystitis;10;Diagnosis;Resolved;25.11.24 16:00;25.11.24 16:00;25.11.24 16:00
+;;;;;;;;;;
+15.01.2025;Dx documentation;Reason for encounter: Diagnostic investigations;;;;;;;;
+15.01.2025;Dx documentation;Haemoglobin (Hb): 130 g/L (120 – 160 g/L);Laboratory results;General health problem;0;Problem;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Haematocrit (Hct): 0.40 (0.36 – 0.46);Laboratory results;General health problem;0;Problem;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Fasting plasma glucose: 6.4 mmol/L (3.9 – 5.5 mmol/L);Laboratory results;Diabetes mellitus type 2;30;Diagnosis;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Glycated haemoglobin (HbA1c): 5.9 % (4.0 – 5.6 %);Laboratory results;Diabetes mellitus type 2;30;Diagnosis;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Alanine aminotransferase (ALT): 20 U/L (7 – 35 U/L);Laboratory results;Obesity WHO grade I;100;Diagnosis;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Aspartate aminotransferase (AST): 18 U/L (10 – 35 U/L);Laboratory results;Obesity WHO grade I;100;Diagnosis;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;Serum creatinine: 102 µmol/L (45 – 90 µmol/L);Laboratory results;Nephropathy (ED 2017);90;Diagnosis;Active;15.01.25 07:30;15.01.25 07:30;18.01.25 13:00
+15.01.2025;Dx documentation;"Chest X-ray pa/lat: Mild, stable cardiomegaly; pulmonary vasculature normal; no interstitial oedema, pleural effusion or focal infiltrates";Imaging results;Coronary heart disease;20;Diagnosis;Active;15.01.25 08:00;15.01.25 08:00;18.01.25 13:00
+15.01.2025;Dx documentation;"ECG 12-lead: Normal sinus rhythm; persistent inferior Q-waves; no acute ST-T changes.";Functional tests results;Coronary heart disease;20;Diagnosis;Active;15.01.25 08:30;15.01.25 08:30;18.01.25 13:00
+;;;;;;;;;;
+18.01.2025;Consultation;Reason for encounter: Chronic-care visit;;;;;;;;
+18.01.2025;Consultation;Blood pressure 135/92;Vital signs;General health problem;0;Problem;Active;18.01.25 13:10;18.01.25 13:00;18.01.25 13:30
+18.01.2025;Consultation;Heart rate 68;Vital signs;General health problem;0;Problem;Active;18.01.25 13:10;18.01.25 13:00;18.01.25 13:30
+18.01.2025;Consultation;Weight  = 85.8 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;18.01.25 13:10;18.01.25 13:00;18.01.25 13:30
+18.01.2025;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;18.01.25 13:10;18.01.25 13:00;18.01.25 13:30
+18.01.2025;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;18.01.25 13:10;18.01.25 13:00;18.01.25 13:30
+18.01.2025;Consultation;"S: Patient takes all diabetes medications regularly and reports no episodes of hypoglycaemia
+O: HbA1c 5.9 %  – upper-normal range; vitals stable
+A: Type 2 diabetes mellitus – well controlled
+P: Continue current antidiabetic regimen unchanged. Schedule ophthalmology consultation for routine retinal screening. Repeat HbA1c in 3 months.";Progress notes;Diabetes mellitus type 2;30;Diagnosis;Active;18.01.25 13:30;18.01.25 13:30;18.01.25 13:30
+18.01.2025;Consultation;"S: No dyspnoea or ankle swelling; adherent to medication
+O: BP 140/90 mmHg, HR 75 bpm; lungs clear, no peripheral oedema; weight unchanged
+A: Chronic heart failure – clinically compensated.
+P: Routine follow-up in 3 months";Progress notes;Heart failure;70;Diagnosis;Active;18.01.25 13:35;18.01.25 13:35;18.01.25 13:35
+18.01.2025;Consultation;"S: No flank pain or foamy urine; adherent to diabetes and BP medications
+O: Renal parameters at the upper limit of normal.
+A: Mild diabetic nephropathy – stable renal function
+P: eGFR in 6 months; counsel on low-sodium diet and hydration";Progress notes;Nephropathy (ED 2017);90;Diagnosis;Active;18.01.25 13:40;18.01.25 13:40;18.01.25 13:40
+;;;;;;;;;;
+25.02.2025;Consultation;Reason for encounter: Abdominal Pain;;;;;;;;
+25.02.2025;Consultation;Blood pressure 135/92;Vital signs;General health problem;0;Problem;Active;25.02.25 17:10;25.02.25 17:00;25.02.25 17:30
+25.02.2025;Consultation;Heart rate 68;Vital signs;General health problem;0;Problem;Active;25.02.25 17:10;25.02.25 17:00;25.02.25 17:30
+25.02.2025;Consultation;Weight  = 85.8 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;25.02.25 17:10;25.02.25 17:00;25.02.25 17:30
+25.02.2025;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;25.02.25 17:10;25.02.25 17:00;25.02.25 17:30
+25.02.2025;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;25.02.25 17:10;25.02.25 17:00;25.02.25 17:30
+25.02.2025;Consultation;"S: Patient reports diffuse, mild abdominal discomfort for several hours; no nausea, vomiting, fever, or change in bowel habits. Pain not related to meals. No prior similar episodes
+O: Afebrile; BP and HR normal. Abdomen soft, nondistended, normal bowel sounds, no guarding or rebound; no organomegaly. Urinalysis and point-of-care glucose unremarkable
+A: Nonspecific abdominal pain – benign findings; etiology unclear, likely function
+P: Watchful waiting (expectant management). Provide advice on hydration and light diet; no medications required at this time. Educated patient on red-flag symptoms (worsening pain, fever, vomiting, GI bleeding) and instructed to return or phone immediately if any occur. Routine follow-up if symptoms persist beyond 48 h.";Progress notes;Abdominal Pain;120;Problem;Active;25.02.25 17:30;25.02.25 17:30;25.02.25 17:30
+;;;;;;;;;;
+;;;;;;;;;;
+27.02.2025;Consultation;Reason for encounter: Abdominal Pain;;;;;;;;
+27.02.2025;Consultation;Blood pressure 145/92;Vital signs;General health problem;0;Problem;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;Heart rate 92;Vital signs;General health problem;0;Problem;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;Weight  = 85.8 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;Temperature = 37.9 °C;Vital signs;Abdominal Pain;120;Problem;Active;27.02.25 11:10;27.02.25 11:00;27.02.25 11:30
+27.02.2025;Consultation;Alanine aminotransferase (ALT): 42 U/L (7 – 35 U/L);Laboratory results;Abdominal Pain;120;Problem;Active;27.02.25 11:30;27.02.25 11:15;27.02.25 12:00
+27.02.2025;Consultation;Aspartate aminotransferase (AST): 45 U/L (10 – 35 U/L);Laboratory results;Abdominal Pain;120;Problem;Active;27.02.25 11:30;27.02.25 11:15;27.02.25 12:00
+27.02.2025;Consultation;Total bilirubin: 18 µmol/L (5 – 21 µmol/L);Laboratory results;Abdominal Pain;120;Problem;Active;27.02.25 11:30;27.02.25 11:15;27.02.25 12:00
+27.02.2025;Consultation;White blood cell count (WBC): 12.4 × 10⁹/L ( 4.0 – 10.0 × 10⁹/L);Laboratory results;Abdominal Pain;120;Problem;Active;27.02.25 11:30;27.02.25 11:15;27.02.25 12:00
+27.02.2025;Consultation;"S: Pain has localized to the right upper quadrant, intensity 6/10, worsening after meals; nausea and single episode of vomiting; low-grade fever reported overnight
+O: Temp 37.9 °C, BP 145/92 mmHg, HR 92 bpm. RUQ tenderness with positive Murphy sign; no rebound. Mild leukocytosis (WBC 12.4 × 10⁹/L); AST/ALT mildly elevated; bilirubin normal
+A: Suspected acute cholecystitis
+P: Referral to gastroenterology";Progress notes;Suspected acute cholecystitis;120;Problem;Active;27.02.25 12:00;27.02.25 12:00;27.02.25 12:00
+;;;;;;;;;;
+28.02.2025;Consultation;Reason for encounter: Referral for suspected cholecystitis;;;;;;;;
+28.02.2025;Consultation;Alanine aminotransferase (ALT): 60 U/L (7 – 35 U/L);Laboratory results;Suspected acute cholecystitis;120;Diagnosis;Active;28.02.25 07:45;28.02.25 07:30;28.02.25 09:00
+28.02.2025;Consultation;Aspartate aminotransferase (AST): 58 U/L (10 – 35 U/L);Laboratory results;Suspected acute cholecystitis;120;Diagnosis;Active;28.02.25 07:45;28.02.25 07:30;28.02.25 09:00
+28.02.2025;Consultation;Total bilirubin: 25 µmol/L (5 – 21 µmol/L);Laboratory results;Suspected acute cholecystitis;120;Diagnosis;Active;28.02.25 07:45;28.02.25 07:30;28.02.25 09:00
+28.02.2025;Consultation;White blood cell count (WBC): 12.4 × 10⁹/L ( 4.0 – 10.0 × 10⁹/L);Laboratory results;Suspected acute cholecystitis;120;Diagnosis;Active;28.02.25 07:45;28.02.25 07:30;28.02.25 09:00
+28.02.2025;Consultation;"Gallbladder: Distended (long axis ≈ 9 cm); lumen contains multiple mobile echogenic calculi with posterior acoustic shadowing. Wall circumferentially thickened (~5 mm) and hyperaemic on Doppler. Positive sonographic Murphy sign. Pericholecystic changes: Thin rim of pericholecystic fluid and mild fat stranding. Biliary tree: Common bile duct calibre normal (≤ 6 mm); no intra-hepatic ductal dilatation.Liver, pancreas, spleen, kidneys: Unremarkable for age. No ascites.
+
+Conclusion: Ultrasound features are typical for acute calculous cholecystits";Imaging results;Suspected acute cholecystitis;120;Diagnosis;Active;28.02.25 08:30;28.02.25 08:00;28.02.25 08:00
+28.02.2025;Consultation;"S: Persistent right-upper-quadrant pain (6/10), worse post-prandially; nausea × 2 days; no jaundice
+O: T 38.1 °C, positive Murphy sign. Ultrasound features are typical for acute calculous cholecystits
+A: Acute calculous cholecystitis
+P: Conservative management with antibiotic therapy and symptomatic treatment. Daily abdominal exam; repeat CBC, LFTs in 24 h. Surgical review if no clinical improvement within 48 h or sepsis develops; consider percutaneous cholecystostomy in high-risk scenario. Plan elective laparoscopic cholecystectomy after resolution of acute episode.";Progress notes;Acute cholecystitis;120;Diagnosis;Active;28.02.25 09:00;28.02.25 09:00;28.02.25 09:00
+28.02.2025;Consultation;Amoxicillin 500 mg / Clavulanate 125 mg film-coated tablet 3x1;Medication;Acute cholecystitis;120;Diagnosis;Active;28.02.25 09:00;28.02.25 09:00;28.02.25 09:00
+;;;;;;;;;;
+15.03.2025;Consultation;Reason for encounter: Follow-up after specialist treatment for acute cholecystitis;;;;;;;;
+15.03.2025;Consultation;Blood pressure 145/92;Vital signs;General health problem;0;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Heart rate 72;Vital signs;General health problem;0;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Weight  = 85.8 kg;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Height = 168 cm;Vital signs;General health problem;0;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;BMI = 30.5;Vital signs;Obesity WHO grade I;100;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Temperature = 36.7 °C;Vital signs;Acute cholecystitis;120;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Haemoglobin (Hb): 130 g/L (120 – 160 g/L);Laboratory results;General health problem;0;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Haematocrit (Hct): 0.40 (0.36 – 0.46);Laboratory results;General health problem;0;Problem;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Fasting plasma glucose: 6.4 mmol/L (3.9 – 5.5 mmol/L);Laboratory results;Diabetes mellitus type 2;30;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Glycated haemoglobin (HbA1c): 5.9 % (4.0 – 5.6 %);Laboratory results;Diabetes mellitus type 2;30;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Alanine aminotransferase (ALT): 20 U/L (7 – 35 U/L);Laboratory results;Acute cholecystitis;120;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Aspartate aminotransferase (AST): 18 U/L (10 – 35 U/L);Laboratory results;Acute cholecystitis;120;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Serum creatinine: 102 µmol/L (45 – 90 µmol/L);Laboratory results;Nephropathy (ED 2017);90;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;Total bilirubin: 25 µmol/L (5 – 21 µmol/L);Laboratory results;Acute cholecystitis;120;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;White blood cell count (WBC): 12.4 × 10⁹/L ( 4.0 – 10.0 × 10⁹/L);Laboratory results;Acute cholecystitis;120;Diagnosis;Active;15.03.25 15:15;15.03.25 15:00;15.03.25 16:00
+15.03.2025;Consultation;"S: Patient feels well; no right-upper-quadrant pain, nausea, vomiting, or fever since completing oral antibiotic course. Normal appetite and bowel habits. No medication side-effects
+O: Temp 36.7 °C,  Abdomen soft, non-distended, non-tender; negative Murphy sign. No jaundice or hepatomegaly. No laboratory tests indicated today
+A: Acute calculous cholecystitis — resolved after conservative antibiotic therapy
+P: No further antibiotics required; continue low-fat diet until elective laparoscopic cholecystectomy. Routine follow-up at next chronic-care visit (3 months) or sooner if needed.";Progress notes;History of acute cholecystitis (2025);120;Diagnosis;Resolved;15.03.25 16:00;15.03.25 16:00;15.03.25 16:00
